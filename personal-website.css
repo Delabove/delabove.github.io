@@ -7,9 +7,27 @@ body{
     background-size: cover;
     height: 200px;
     width: 100%;
+    padding-top: 20px;
     /*background-color: black;*/
+}
+
+#headBgText{
+    color: white;
+    font-size: 55px;
+    font-weight: bolder;
+    margin-left: 3em;
+    padding-top: 50px;
+
+}
+#headBgTextName{
+    color: white;
+    font-size: 55px;
+    font-weight: bolder;
+    margin-left: 3em;
+
 }
 
 ul {
     list-style: none;
 }
+
