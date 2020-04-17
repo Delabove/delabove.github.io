@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#headBg {
+    background-image: url('img/headBg.png');
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    /*background-color: black;*/
+}
+
+ul {
+    list-style: none;
+}
