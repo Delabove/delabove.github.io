@@ -1,6 +1,35 @@
+
 body{
     margin: 0;
     padding: 0;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+.top-nav {
+    /*position: fixed;*/
+    /*left: 440px;*/
+    /*z-index: 1000;*/
+    /*padding: 1.5em;*/
+    /*width: 100%;*/
+    font-size: 2em;
+    color: white;
+    /*background: grey;*/
+    /*border: 2px solid black;*/
+    display: flex;
+    justify-content: right;
+    align-items: start;
+
+}
+
+
+.nav-item{
+    /*display: inline-block;*/
+    /*padding: 1.5em;*/
 }
 
 #headBgXl {
@@ -30,7 +59,6 @@ body{
 
 }
 
-ul {
-    list-style: none;
+#jump-links {
+    color: black;
 }
-
