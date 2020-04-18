@@ -12,14 +12,23 @@ body{
     /*background-color: black;*/
 }
 
-/*#headBgText{*/
-/*    color: white;*/
-/*    font-size: 55px;*/
-/*    font-weight: bolder;*/
-/*    margin-left: 3em;*/
-/*    padding-top: 50px;*/
+#headBgText{
+    color: white;
+    font-size: 55px;
+    font-weight: bolder;
+    margin-left: 3em;
+    padding-top: 50px;
 
-/*}*/
+}
+
+#headBgTextName{
+    color: white;
+    font-size: 55px;
+    font-weight: bolder;
+    margin-left: 3em;
+    padding-top: 50px;
+
+}
 
 ul {
     list-style: none;
