@@ -2,30 +2,24 @@ body{
     margin: 0;
     padding: 0;
 }
-#headBg {
-    background-image: url('img/headBg.png');
+
+#headBgXl {
+    background-image: url('img/head2BgXl.png');
     background-size: cover;
-    height: 200px;
+    height: 500px;
     width: 100%;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
     /*background-color: black;*/
 }
 
-#headBgText{
-    color: white;
-    font-size: 55px;
-    font-weight: bolder;
-    margin-left: 3em;
-    padding-top: 50px;
+/*#headBgText{*/
+/*    color: white;*/
+/*    font-size: 55px;*/
+/*    font-weight: bolder;*/
+/*    margin-left: 3em;*/
+/*    padding-top: 50px;*/
 
-}
-#headBgTextName{
-    color: white;
-    font-size: 55px;
-    font-weight: bolder;
-    margin-left: 3em;
-
-}
+/*}*/
 
 ul {
     list-style: none;
