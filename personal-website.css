@@ -1,64 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
 
 body{
     margin: 0;
-    padding: 0;
+    height: 100vh;
+
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: .5fr .6fr .5fr .5fr .5fr;
+    grid-template-rows: .2fr .5fr .5fr .5fr .5fr .5fr;
+    height: 100vh;
+    margin: 2em;
+}
+
+.intro {
+    grid-column: 1 / 6;
+    grid-row: 1 / 3;
+    background-color: red;
+}
+
+.headshot {
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+    background-color: yellow;
+
+}
+
+.portfolio{
+    grid-column: 1 / 6;
+    grid-row: 5 / 6;
+    background-color: blue;
+}
+
+.experience{
+    grid-column: 1 / 6;
+    grid-row: 6 / 7;
+    background-color: red;
+}
+
+header {
+    grid-column: 4 / 6;
+    grid-row: 1 / 2;
+    background-color: white;
+}
 
 ul {
     list-style: none;
 }
 
-
 .top-nav {
-    /*position: fixed;*/
-    /*left: 440px;*/
-    /*z-index: 1000;*/
-    /*padding: 1.5em;*/
-    /*width: 100%;*/
-    font-size: 2em;
-    color: white;
-    /*background: grey;*/
-    /*border: 2px solid black;*/
+    /*font-size: 2em;*/
+    color: black;
     display: flex;
     justify-content: right;
     align-items: start;
 
 }
 
-
-.nav-item{
-    /*display: inline-block;*/
-    /*padding: 1.5em;*/
-}
-
-#headBgXl {
-    background-image: url('img/head2BgXl.png');
-    background-size: cover;
-    height: 500px;
-    width: 100%;
-    /*padding-top: 20px;*/
-    /*background-color: black;*/
-}
-
-#headBgText{
-    color: white;
-    font-size: 55px;
-    font-weight: bolder;
-    margin-left: 3em;
-    padding-top: 50px;
+.aboutme {
+    grid-column: 3 / 6;
+    grid-row: 3 / 5;
+    background-color: green;
 
 }
 
-#headBgTextName{
-    color: white;
-    font-size: 55px;
-    font-weight: bolder;
-    margin-left: 3em;
-    padding-top: 50px;
+/* !*!*>>>>>>>>>>   !*WELCOME AND NAV BAR*!*! <<<<<<<<<<<<<*!*/
 
-}
 
-#jump-links {
-    color: black;
-}
+
+/*!**!*/
+/*!**!*/
+/*
+/*!**!*/
+/*!**!*/
+/*.nav-item{*/
+/*    color: white;*/
+/*    display: inline-block;*/
+/*    padding: 1.5em;*/
+/*}*/
+/*!**!*/
+/*!**!*/
+/*!*>>>>>>>>>> ABOUT ME SECTION <<<<<<<<<<<<<<<<*!*/
+/*!**!*/
+
+/*#headBgXl {*/
+/*    background-image: url('img/head2BgXl.png');*/
+/*!*    background-size: cover;*!*/
+/*    height: 500px;*/
+/*    width: 100%;*/
+/*    padding-top: 20px;*/
+/*    background-color: black;*/
+/*}*/
+
+
+
+
+/*#headBgText{*/
+/*    color: white;*/
+/*    font-size: 55px;*/
+/*    font-weight: bolder;*/
+/*    margin-left: 3em;*/
+/*    padding-top: 50px;*/
+
+/*}*/
+
+/*#headBgTextName{*/
+/*    color: white;*/
+/*    font-size: 55px;*/
+/*    font-weight: bolder;*/
+/*    margin-left: 3em;*/
+/*    padding-top: 50px;*/
+
+/*}*/
+
