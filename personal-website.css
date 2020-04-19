@@ -10,26 +10,12 @@ ul {
 }
 
 
-.top-nav {
-    /*position: fixed;*/
-    /*left: 440px;*/
-    /*z-index: 1000;*/
-    /*padding: 1.5em;*/
-    /*width: 100%;*/
-    font-size: 2em;
-    color: white;
-    /*background: grey;*/
-    /*border: 2px solid black;*/
-    display: flex;
-    justify-content: right;
-    align-items: start;
-
+.nav-item{
+    display: inline-block;
 }
 
-
-.nav-item{
-    /*display: inline-block;*/
-    /*padding: 1.5em;*/
+#jump-links {
+    color: black;
 }
 
 #headBgXl {
@@ -37,16 +23,16 @@ ul {
     background-size: cover;
     height: 500px;
     width: 100%;
-    /*padding-top: 20px;*/
-    /*background-color: black;*/
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
 }
 
 #headBgText{
     color: white;
     font-size: 55px;
     font-weight: bolder;
-    margin-left: 3em;
-    padding-top: 50px;
 
 }
 
@@ -54,11 +40,5 @@ ul {
     color: white;
     font-size: 55px;
     font-weight: bolder;
-    margin-left: 3em;
-    padding-top: 50px;
 
-}
-
-#jump-links {
-    color: black;
 }
