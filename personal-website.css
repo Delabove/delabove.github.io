@@ -9,14 +9,22 @@ ul {
     list-style: none;
 }
 
+a li {
+    color: white;
+    font-size: 3vw;
+}
+
+.navbar {
+    float: right;
+}
 
 .nav-item{
     display: inline-block;
+    padding-left: 29px;
+
+
 }
 
-#jump-links {
-    color: black;
-}
 
 #headBgXl {
     background-image: url('img/head2BgXl.png');
