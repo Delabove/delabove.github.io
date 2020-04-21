@@ -14,9 +14,9 @@ a li {
     font-size: 3vw;
 }
 
-.navbar {
-    float: right;
-}
+/*.navbar {*/
+/*    float: right;*/
+/*}*/
 
 .nav-item{
     display: inline-block;
@@ -44,10 +44,10 @@ a li {
 
 }
 
-#headBgTextName{
-    color: white;
-    font-size: 55px;
-    font-weight: bolder;
+/*#headBgTextName{*/
+/*    color: white;*/
+/*    font-size: 55px;*/
+/*    font-weight: bolder;*/
 
-}
+/*}*/
 
