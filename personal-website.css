@@ -39,7 +39,7 @@ a {
 }
 
 
-#headBgText {
+#intro-header {
     color: white;
     /*font-size: 10px;*/
     font-weight: bolder;
@@ -68,7 +68,7 @@ a {
 /*SMALL*/
 
 @media (min-width: 375px) {
-    #navbar-header {
+    #header {
         margin-left: 30px;
         padding-top: 80px;
 
@@ -78,6 +78,10 @@ a {
         background-position: -300px;
         height: 800px;
         width: 200%;
+    }
+
+    #intro-header {
+        font-size: 75px;
     }
 
     #contact-btn {
