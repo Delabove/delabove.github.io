@@ -9,14 +9,12 @@ ul {
     list-style: none;
 }
 
-a li {
+a {
     color: white;
-    font-size: 3vw;
+    font-size: 20px;
 }
 
-/*.navbar {*/
-/*    float: right;*/
-/*}*/
+
 
 .nav-item{
     display: inline-block;
@@ -44,10 +42,79 @@ a li {
 
 }
 
-/*#headBgTextName{*/
-/*    color: white;*/
-/*    font-size: 55px;*/
-/*    font-weight: bolder;*/
 
-/*}*/
+
+@media (min-width: 325px) {
+    #navbar-header {
+
+        margin-left: 50px;
+
+    }
+}
+
+
+@media (min-width: 425px) {
+    #navbar-header {
+
+        margin-left: 75px;
+
+    }
+}
+@media (min-width: 768px) {
+    #navbar-header {
+        margin-top: 90px;
+        margin-left: 200px;
+
+    }
+}
+    #headBgText {
+    font-size: 70px;
+}
+
+
+@media (min-width: 1024px) {
+
+    #headBgXl {
+
+        width: 100%;
+    }
+
+    #navbar-header{
+        margin-left: 180px;
+
+
+    }
+}
+#about-me {
+    padding-top: 0px;
+    margin: 20px;
+}
+
+
+@media (min-width: 1440px) {
+    #navbar-header {
+        margin-left: 90px;
+
+}
+
+    #headBgText {
+        font-size: 75px;
+    }
+}
+@media (min-width: 2560px) {
+
+    #headBgXl {
+        height: 700px;
+        width: 100%;
+    }
+
+    #navbar-header {
+        margin-left: -400px;
+
+    }
+
+    #headBgText {
+        font-size: 160px;
+    }
+}
 
