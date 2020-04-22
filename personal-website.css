@@ -89,6 +89,22 @@ a {
 
     }
 
+    #portfolio{
+
+        margin-top: 70px;
+    }
+
+    #project {
+        margin-bottom: 60px;
+
+    }
+
+    #profBranding {
+        margin-bottom: 60px;
+
+    }
+
+
 }
 
 
@@ -113,6 +129,15 @@ a {
     }
 
 
+    #project{
+
+    }
+    #profBranding{
+
+    }
+    #pubSpeaking{
+
+    }
 
 
 }
@@ -134,6 +159,17 @@ a {
     #intro-header{
         margin-right: 10px ;
         font-size: 90px;
+
+    }
+
+
+    #project{
+
+    }
+    #profBranding{
+
+    }
+    #pubSpeaking{
 
     }
 
