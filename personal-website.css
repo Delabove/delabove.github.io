@@ -14,7 +14,9 @@ a {
     font-size: 20px;
 }
 
-
+#email-btn{
+    padding-top: 10px;
+}
 
 .nav-item{
     display: inline-block;
@@ -27,7 +29,7 @@ a {
 #headBgXl {
     background-image: url('img/head2BgXl.png');
     background-size: cover;
-    height: 500px;
+    height: 800px;
     width: 100%;
     position: absolute;
     left: 0px;
@@ -35,52 +37,112 @@ a {
     z-index: -1;
 }
 
-#headBgText{
+#headBgText {
     color: white;
-    font-size: 55px;
+    font-size: 50px;
     font-weight: bolder;
+}
+
+#title {
+    color: white;
+
+
+}
+
+#contact-btn {
+    color: white;
+    border: solid 1px white;
+    background-color: black;
 
 }
 
 
 
-@media (min-width: 325px) {
-    #navbar-header {
 
-        margin-left: 50px;
+/*/////////////MEDIA QUERIES/////////////////////////*/
+
+
+/*SMALL*/
+
+@media (min-width: 375px) {
+    #navbar-header {
+        margin-left: 30px;
+        padding-top: 80px;
 
     }
+
+    #headBgXl{
+        background-position: -300px;
+        height: 800px;
+        width: 200%;
+    }
+
+    #contact-btn {
+        margin-left: 95px;
+
+    }
+
 }
+
+
+
+/*SMALL*/
 
 
 @media (min-width: 425px) {
     #navbar-header {
-
-        margin-left: 75px;
+        margin-left: 80px;
 
     }
+
+    #contact-btn {
+        text-align: center;
+    }
+
+    #headBgText {
+        margin-right: 10px ;
+        font-size: 55px;
+
+    }
+
+
+
+
 }
+
+
+
+
+
+
+/*MEDIUM  */
+
+
 @media (min-width: 768px) {
     #navbar-header {
-        margin-top: 90px;
-        margin-left: 200px;
-
+        margin-top: 65px;
+        margin-left: 150px;
     }
-}
-    #headBgText {
-    font-size: 70px;
+
 }
 
+
+
+
+
+
+
+
+
+
+    /*LARGE*/
 
 @media (min-width: 1024px) {
 
-    #headBgXl {
 
-        width: 100%;
-    }
 
     #navbar-header{
-        margin-left: 180px;
+        margin-left: 280px;
 
 
     }
@@ -91,30 +153,50 @@ a {
 }
 
 
+#headBgText{
+    font-size: 90px;
+}
+
+
+
+
+
+
+/*EXTRA LARGE*/
+
+
 @media (min-width: 1440px) {
     #navbar-header {
-        margin-left: 90px;
+
+        margin-left: 150px;
 
 }
 
-    #headBgText {
-        font-size: 75px;
+    #headBgText{
+        font-size: 110px;
     }
+
 }
+
 @media (min-width: 2560px) {
 
-    #headBgXl {
-        height: 700px;
-        width: 100%;
-    }
+
 
     #navbar-header {
-        margin-left: -400px;
-
     }
 
     #headBgText {
         font-size: 160px;
     }
+    #title{
+        font-size: 40px;
+    }
+
+    #contact-btn {
+        margin-left: 220px;
+        font-size: 20px;
+
+    }
+
 }
 
