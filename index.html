@@ -37,11 +37,11 @@
        </nav>
 
 <!--HEADER BACKGROUND-->
-    <div class="row">
+<!--    <div class="row">-->
 
        <div id="headBgXl"></div>
 
-    </div>
+<!--    </div>-->
 
 
 <!--HEADER-->
@@ -63,7 +63,7 @@
        <div class="row" id="profilePic">
            <div class="col-md-6">
 
-               <img src="img/profilePic copy.png"  width="90%"/>
+               <img src="img/profilePic copy.png"  width="60%"/>
            </div>
            <div class="col-md-6 text-center" id="about-me-section" ><h1 id="about-me" style="font-family: Open Sans; font-weight: bold;"><br><br>About Me</h1>
               <p><img src="img/icons/Untitled design (5).png" width="60%"/></p>
@@ -82,34 +82,33 @@
                </div>
 
 
-
                <div class="col-md-4 text-center" id="profBranding">
                    <span  class="portfolio-list-item"><img src="img/icons/chat.png" width="30%"/><p class="pt-4" style=" font-family: Open Sans;
-    font-weight: bold; font-size: 20px;">Social Media Branding</p></span>
+    font-weight: bold; font-size: 20px;">Digital Branding</p></span>
                </div>
-
 
 
                <div class="col-md-4 text-center" id="pubSpeaking">
-                   <span class="portfolio-list-item"><img src="img/icons/cellPhone.png" width="30%"/><p class="pt-4" style=" font-family: Open Sans;
-    font-weight: bold; font-size: 20px;">Public Speaking</p></span>
+                   <span class="portfolio-list-item"><img src="img/icons/cellPhone.png" width="30%"/><p class="pt-4" style=" font-family: Open Sans;-->
+    font-weight: bold; font-size: 20px;"></p></span>
                </div>
-           </div>
+<!--           </div>-->
        </div>
 
 
 
        <!--       PROJECTS-->
 
-       <div class="dropdown-menu m-5 p-5 " style="width: 80%" id="projectDiv">
-           <div class="col-12">
-               <span id="coffee-project"><img src="Project GIFS/coffee-project.gif" width="100%"/></span>
-           </div>
-
-           <div class="col-12">
-             <span id="weather-map"><img src="Project%20GIFS/weatherMap.gif" width="100%"/></span>
-           </div>
+       <div class="projectsDiv mt-5" style="width: 100%" id="projectDiv">
+           <h1 class="text-center pt-5" style="font-family: Open Sans; font-weight: bold">Development Projects</h1>
+          <span><img src="Project GIFS/coffee-project.gif" width="100%"/></span>
+          <span><img src="Project%20GIFS/weatherMap.gif" width="100%"/></span>
        </div>
+
+<!--       <div class="brandingDiv mr-5" style="width: 100%" id="branding">-->
+<!--           <h1 class="text-center" style="font-family: Open Sans; font-weight: bold" >Digital Branding Experience</h1>-->
+<!--           <span><img src="Project GIFS/branding.gif" height="100" width= 100%"/></span>-->
+<!--       </div>-->
 
 
 
@@ -143,7 +142,7 @@
 <!--            <li id="professional">Professional Testimonies</li>-->
 <!--            <li id="clients">Client Testimonies</li>-->
 <!--        </ul>-->
-<!--    </div>-->
+    </div>
 
    </main>
 
@@ -170,30 +169,17 @@
        "use strict";
        $(document).ready(function () {
 
-        $('#project').on('click',() => {
-            $('#projectDiv').show();
+           $(".projectsDiv").hide();
+           $("#project").on("click", function(){
+               $(".projectsDiv").show();
            });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+           //
+           //
+           //
+           // $(".brandingDiv").hide();
+           // $("#profBranding").on("click", function(){
+           //     $(".brandingDiv").show();
+           // });
 
 
 
