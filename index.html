@@ -105,10 +105,10 @@
           <span><img src="Project%20GIFS/weatherMap.gif" width="100%"/></span>
        </div>
 
-<!--       <div class="brandingDiv mr-5" style="width: 100%" id="branding">-->
-<!--           <h1 class="text-center" style="font-family: Open Sans; font-weight: bold" >Digital Branding Experience</h1>-->
-<!--           <span><img src="Project GIFS/branding.gif" height="100" width= 100%"/></span>-->
-<!--       </div>-->
+       <div class="brandingDiv mr-5" id="branding">
+           <h1 class="text-center" style="font-family: Open Sans; font-weight: bold" >Digital Branding Experience</h1>
+           <span><img src="Project GIFS/branding.gif"  width= 100%"/></span>
+       </div>
 
 
 
@@ -171,15 +171,15 @@
 
            $(".projectsDiv").hide();
            $("#project").on("click", function(){
-               $(".projectsDiv").show();
+               $(".projectsDiv").toggle();
            });
-           //
-           //
-           //
-           // $(".brandingDiv").hide();
-           // $("#profBranding").on("click", function(){
-           //     $(".brandingDiv").show();
-           // });
+
+
+
+           $(".brandingDiv").hide();
+           $("#profBranding").on("click", function(){
+               $(".brandingDiv").toggle();
+           });
 
 
 
