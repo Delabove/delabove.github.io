@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -21,95 +21,103 @@
 
 </head>
 <body>
-   <main class="container">
+   <main class="container-fluid">
 
 <!--       >>>>>>> NAVIGATION BAR <<<<<<<<<<<-->
 
        <nav class="navbar navbar-expand-sm d-flex justify-content-end pr-0">
                <div class="navbar-nav" id="nav-links">
                    <div class="navbar-nav collapse navbar-collapse">
-                   <a href="#" class="nav-item active"  id="aboutMe">About</a>
-                   <a href="#" class="nav-item active" id="projects">Portfolio</a>
-                   <a href="#" class="nav-item active" id="experience">Experience</a>
-                   <a href="#" class="nav-item active" id="contact">Contact</a>
+                       <a href="#" class="nav-item active"  id="aboutMe">About</a>
+                       <a href="#" class="nav-item active" id="projects">Portfolio</a>
+                       <a href="#" class="nav-item active" id="experience">Experience</a>
+                       <a href="#" class="nav-item active" id="contact">Contact</a>
+                 </div>
                </div>
-           </div>
        </nav>
 
 <!--HEADER BACKGROUND-->
-<!--    <div class="row">-->
-
-       <div id="headBgXl"></div>
-
-<!--    </div>-->
+        <div class="row">
+            <div id="headBgXl">
+               <img src="img/head2BgXl.png" height="500" width="1500"/>
+             </div>
+        </div>
 
 
 <!--HEADER-->
 
 
 
-                <header id="header">
-                    <h1 id="intro-header">Hello,<br> I'm DeLayne.</h1>
-                    <h5 id="title"> Web Developer and Designer</h5>
-                    <div id="email-btn"><button type="button" id="contact-btn" >Contact</button></div>
+       <header  id="header">
+           <h1 id="intro-header">Hello,<br> I'm DeLayne.</h1>
+           <h5 id="title" class="col-12"> Web Developer and Designer</h5>
 
-                </header>
+<!--           CONTACT BUTTON-->
+           <div id="email-btn">
+               <button type="button" id="contact-btn" >Contact</button>
+           </div>
+       </header>
 
 
 
 <!--PROFILE PIC && ABOUT ME SECTION-->
 
-<div class="profile-container mt-5 pt-5">
-       <div class="row" id="profilePic">
-           <div class="col-md-6 text-center">
 
-               <img src="img/profilePic copy.png"  width="80%"/>
-           </div>
-           <div class="col-md-6 text-center" id="about-me-section" ><h1 id="about-me" style="font-family: Open Sans; font-weight: bold;"><br><br>About Me</h1>
-              <p><img src="img/icons/Untitled design (5).png" width="60%"/></p>
-               3 years ago, I attended a class in New York. At the end of that 3 days, the hosting artist asked if I could stay an extra day and work with her. I went home that week with a new opportunity in brand and social media management. The following 3 years took me on a journey that introduced me to front end development. On paper, I am a business owner, hairstylist, and educator. On a computer, however, I am a developer.
-           </div>
-       </div>
-</div>
+               <div class="container-xl" >
+                   <div id="about-me" class="col-12 offset-sm-3 text-center">
+                       <img src="img/profilePic copy.png" width="100%"/>
+                   </div>
+                   <div class="col-12 text-center" id="about-me-section" ><h1 style="font-family: Open Sans; font-weight: bold; font-size: 70px"><br><br>About Me</h1>
+                       <p>
+                           <img src="img/icons/Untitled design (5).png" width="60%"/>
+                       </p>
+                       3 years ago, I attended a class in New York. At the end of that 3 days, the hosting artist asked if I could stay an extra day and work with her. I went home that week with a new opportunity in brand and social media management. The following 3 years took me on a journey that introduced me to front end development. On paper, I am a business owner, hairstylist, and educator. On a computer, however, I am a developer.
+                   </div>
+               </div>
+
 
 <!--       >>>>>>>>>>>>>>>> ICON SECTION <<<<<<<<<<<<<<<<<<-->
 
-       <div class="profile-container mt-5 pt-5">
-           <div class="row">
-               <div class="dropdown col-md-4 text-center" id="projectPortfolio">
-                   <span class="portfolio-list-item" id="project"><img src="img/icons/laptop.png" width="30%"/><p class="pt-4" style=" font-family: Open Sans;
-    font-weight: bold; font-size: 20px;">Development Projects</p></span>
-               </div>
+<!--       <div class="profile-container mt-5 pt-5">-->
+<!--           <div class="row">-->
+<!--               <div class="dropdown col-md-4 text-center" id="projectPortfolio">-->
+<!--                   <span class="portfolio-list-item" id="project">-->
+<!--                       <img src="img/icons/laptop.png" width="30%"/>-->
+<!--                       <p class="pt-4" style=" font-family: Open Sans;font-weight: bold; font-size: 20px;">Development Projects</p>-->
+<!--                   </span>-->
+<!--               </div>-->
 
 
-               <div class="col-md-4 text-center" id="profBranding">
-                   <span  class="portfolio-list-item"><img src="img/icons/chat.png" width="30%"/><p class="pt-4" style=" font-family: Open Sans;
-    font-weight: bold; font-size: 20px;">Digital Branding</p></span>
-               </div>
+<!--               <div class="col-md-4 text-center" id="profBranding">-->
+<!--                   <span  class="portfolio-list-item"><img src="img/icons/chat.png" width="30%"/><p class="pt-4" style=" font-family: Open Sans;-->
+<!--                        font-weight: bold; font-size: 20px;">Digital Branding</p>-->
+<!--                   </span>-->
+<!--               </div>-->
 
 
-               <div class="col-md-4 text-center" id="pubSpeaking">
-                   <span class="portfolio-list-item"><img src="img/icons/cellPhone.png" width="30%"/><p class="pt-4" style=" font-family: Open Sans;-->
-    font-weight: bold; font-size: 20px;"></p></span>
-               </div>
+<!--               <div class="col-md-4 text-center" id="pubSpeaking">-->
+<!--                   <span class="portfolio-list-item"><img src="img/icons/cellPhone.png" width="30%"/>-->
+<!--                       <p class="pt-4" style=" font-family: Open Sans; font-weight: bold; font-size: 20px;"></p>-->
+<!--                   </span>-->
+<!--               </div>-->
 <!--           </div>-->
-       </div>
-
+<!--       </div>-->
 
 
        <!--       PROJECTS-->
 
        <div class="projectsDiv mt-5" style="width: 100%" id="projectDiv">
            <h1 class="text-center pt-5" style="font-family: Open Sans; font-weight: bold">Development Projects</h1>
-          <span><img src="Project GIFS/coffee-project.gif" width="100%"/></span>
-          <span><img src="Project%20GIFS/weatherMap.gif" width="100%"/></span>
+          <span>
+              <img src="Project GIFS/coffee-project.gif" width="100%"/>
+          </span>
+          <span>
+              <img src="Project%20GIFS/weatherMap.gif" width="100%"/>
+          </span>
        </div>
 
-       <div class="brandingDiv mr-5 pt-5 text-center" id="branding">
-           <h1 class="text-center pb-5" style="font-family: Open Sans; font-weight: bold" >Digital Branding Experience</h1>
-           <span><img src="Project GIFS/branding.gif"  width= 100%"/></span>
-       </div>
 
+   </main>
 
 
 
@@ -142,9 +150,9 @@
 <!--            <li id="professional">Professional Testimonies</li>-->
 <!--            <li id="clients">Client Testimonies</li>-->
 <!--        </ul>-->
-    </div>
 
-   </main>
+
+
 
 
 
@@ -165,30 +173,31 @@
 
 
 <!--&gt;>>>>>>>>>>>>>>>>>>>>>>JQUERY AND JAVASCRIPT<<<<<<<<<<<<<<<<<<<<<<<<<-->
-   <script>
-       "use strict";
-       $(document).ready(function () {
+<!--   <script>-->
+<!--       "use strict";-->
+<!--       $(document).ready(function () {-->
 
-           $(".projectsDiv").hide();
-           $("#project").on("click", function(){
-               $(".projectsDiv").toggle();
-           });
-
-
-
-           $(".brandingDiv").hide();
-           $("#profBranding").on("click", function(){
-               $(".brandingDiv").toggle();
-           });
+<!--           $(".projectsDiv").hide();-->
+<!--           $("#project").on("click", function(){-->
+<!--               $(".projectsDiv").toggle();-->
+<!--           });-->
 
 
 
+<!--           $(".brandingDiv").hide();-->
+<!--           $("#profBranding").on("click", function(){-->
+<!--               $(".brandingDiv").toggle();-->
+<!--           });-->
 
-       });
 
 
-   </script>
+
+<!--       });-->
+
+
+<!--   // </script>-->
 
 
 
 </body>
+</html>

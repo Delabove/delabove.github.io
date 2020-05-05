@@ -2,6 +2,7 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
 }
 
 
@@ -24,7 +25,6 @@ a {
 }
 
 
-
 #email-btn{
     padding-top: 10px;
 }
@@ -32,8 +32,8 @@ a {
 #headBgXl {
     background-image: url('img/head2BgXl.png');
     background-size: cover;
-    height: 800px;
-    width: 100%;
+    height: 900px;
+    width: 1500px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -43,7 +43,6 @@ a {
 
 #intro-header {
     color: white;
-    /*font-size: 10px;*/
     font-weight: bolder;
 }
 
@@ -60,6 +59,9 @@ a {
 
 }
 
+
+
+
 #weather-map{
     margin-left: 100px;
 }
@@ -72,26 +74,32 @@ a {
 /*SMALL*/
 
 @media (min-width: 375px) {
+
+
     #header {
         margin-left: 30px;
         padding-top: 80px;
 
     }
 
-    #headBgXl{
-        background-position: -300px;
-        height: 800px;
-        width: 200%;
-    }
-
     #intro-header {
         font-size: 75px;
+        margin-left: 300px;
+        margin-top: 80px;
+    }
+    #email-btn {
+        margin-left: 400px;
+    }
+
+    #title {
+        margin-left: 300px;
     }
 
     #contact-btn {
         margin-left: 95px;
 
     }
+
 
     #portfolio{
 
@@ -113,71 +121,65 @@ a {
 
 
 
-/*SMALL*/
+/*!*SMALL*!*/
 
 
-@media (min-width: 425px) {
-    #header {
-        margin-left: 50px;
+/*@media (min-width: 425px) {*/
+/*    #header {*/
+/*        margin-left: 50px;*/
 
-    }
+/*    }*/
 
-    #contact-btn {
-        text-align: center;
-    }
+/*    #contact-btn {*/
+/*        text-align: center;*/
+/*    }*/
 
-    #intro-header{
-        margin-right: 10px ;
-        font-size: 75px;
+/*    #intro-header{*/
+/*        margin-right: 10px ;*/
+/*        font-size: 150px;*/
 
-    }
+/*    }*/
 
 
-    #project{
 
-    }
-    #profBranding{
 
-    }
-    #pubSpeaking{
+/*}*/
 
-    }
 
 
-}
 
 
 
+/*!*MEDIUM  *!*/
 
 
+/*@media (min-width: 768px) {*/
+/*    #header {*/
+/*        margin-top: 65px;*/
+/*        margin-left: 120px;*/
+/*    }*/
 
-/*MEDIUM  */
+/*    #intro-header{*/
+/*        margin-right: 10px ;*/
+/*        font-size: 90px;*/
 
+/*    }*/
 
-@media (min-width: 768px) {
-    #header {
-        margin-top: 65px;
-        margin-left: 120px;
-    }
 
-    #intro-header{
-        margin-right: 10px ;
-        font-size: 90px;
+/*    #project{*/
 
-    }
+/*    }*/
+/*    #profBranding{*/
 
+/*    }*/
+/*    #pubSpeaking{*/
 
-    #project{
+/*    }*/
 
-    }
-    #profBranding{
+/*}*/
 
-    }
-    #pubSpeaking{
 
-    }
 
-}
 
 
 
@@ -185,66 +187,72 @@ a {
 
 
 
+/*    !*LARGE*!*/
 
+/*@media (min-width: 1024px) {*/
 
 
-    /*LARGE*/
 
-@media (min-width: 1024px) {
+/*    #header{*/
+/*        margin-left: 180px;*/
 
 
+/*    }*/
+/*}*/
+/*#about-me {*/
+/*    padding-top: 0px;*/
+/*    margin: 20px;*/
+/*}*/
 
-    #header{
-        margin-left: 180px;
+/*#headBgXl{*/
+/*    background-position: -300px;*/
+/*    height: 900px;*/
+/*    width: 1500px;*/
+/*}*/
 
 
-    }
-}
-#about-me {
-    padding-top: 0px;
-    margin: 20px;
-}
 
 
 
 
 
+/*!*EXTRA LARGE*!*/
 
 
+/*@media (min-width: 1440px) {*/
 
+/*    #header {*/
 
-/*EXTRA LARGE*/
+/*        margin-left: 150px;*/
 
+/*}*/
 
-@media (min-width: 1440px) {
+/*    #intro-header{*/
+/*        font-size: 110px;*/
+/*    }*/
 
-    #header {
+/*}*/
 
-        margin-left: 150px;
+/*@media (min-width: 2560px) {*/
 
-}
 
-    #intro-header{
-        font-size: 110px;
-    }
+/*    !*#headBgXl{*!*/
+/*    !*    background-position: -600px;*!*/
+/*    !*    height: 900px;*!*/
+/*    !*    width: 100%;*!*/
+/*    !*}*!*/
+/*    #intro-header {*/
+/*        font-size: 140px;*/
+/*    }*/
+/*    #title{*/
+/*        font-size: 40px;*/
+/*    }*/
 
-}
+/*    #contact-btn {*/
+/*        margin-left: 220px;*/
+/*        font-size: 20px;*/
 
-@media (min-width: 2560px) {
+/*    }*/
 
-
-    #intro-header {
-        font-size: 140px;
-    }
-    #title{
-        font-size: 40px;
-    }
-
-    #contact-btn {
-        margin-left: 220px;
-        font-size: 20px;
-
-    }
-
-}
+/*}*/
 
