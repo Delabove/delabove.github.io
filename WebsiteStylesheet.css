@@ -1,0 +1,14 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.navbar {
+    background-color: black;
+}
+
+button.navbar-toggler {
+    color: white;
+}
