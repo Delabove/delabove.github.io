@@ -1,258 +1,267 @@
 
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
-}
+/*body{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: content-box;*/
+/*}*/
 
 
-ul {
-    list-style: none;
-}
+/*ul {*/
+/*    list-style: none;*/
+/*}*/
 
-a {
-    color: white;
-    font-size: 20px;
-}
-
-
-
-.nav-item{
-    display: inline-block;
-    padding-left: 29px;
-
-
-}
-
-
-#email-btn{
-    padding-top: 10px;
-}
-
-#headBgXl {
-    background-image: url('img/head2BgXl.png');
-    background-size: cover;
-    height: 900px;
-    width: 1500px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-}
-
-
-#intro-header {
-    color: white;
-    font-weight: bolder;
-}
-
-#title {
-    color: white;
-
-
-}
-
-#contact-btn {
-    color: white;
-    border: solid 1px white;
-    background-color: black;
-
-}
+/*a {*/
+/*    color: white;*/
+/*    font-size: 20px;*/
+/*}*/
 
 
 
-
-#weather-map{
-    margin-left: 100px;
-}
-
+/*.nav-item{*/
+/*    display: inline-block;*/
+/*    padding-left: 29px;*/
 
 
-/*/////////////MEDIA QUERIES/////////////////////////*/
+/*}*/
 
 
-/*SMALL*/
+/*#email-btn{*/
+/*    padding-top: 10px;*/
+/*}*/
 
-@media (min-width: 375px) {
-
-
-    #header {
-        margin-left: 30px;
-        padding-top: 80px;
-
-    }
-
-    #intro-header {
-        font-size: 75px;
-        margin-left: 300px;
-        margin-top: 80px;
-    }
-    #email-btn {
-        margin-left: 400px;
-    }
-
-    #title {
-        margin-left: 300px;
-    }
-
-    #contact-btn {
-        margin-left: 95px;
-
-    }
+/*#headBgXl {*/
+/*    background-image: url('img/head2BgXl.png');*/
+/*    background-size: cover;*/
+/*    height: 900px;*/
+/*    width: 1500px;*/
+/*    position: absolute;*/
+/*    left: 0px;*/
+/*    top: 0px;*/
+/*    z-index: -1;*/
+/*}*/
 
 
-    #portfolio{
+/*#intro-header {*/
+/*    color: white;*/
+/*    font-weight: bolder;*/
+/*}*/
 
-        margin-top: 70px;
-    }
-
-    #project {
-        margin-bottom: 60px;
-
-    }
-
-    #profBranding {
-        margin-bottom: 60px;
-
-    }
+/*#title {*/
+/*    color: white;*/
 
 
-}
+/*}*/
+
+/*#contact-btn {*/
+/*    color: white;*/
+/*    border: solid 1px white;*/
+/*    background-color: black;*/
+
+/*}*/
 
 
+
+
+/*#weather-map{*/
+/*    margin-left: 100px;*/
+/*}*/
+
+
+
+/*/////////////MEDIA QUERIES////////////////////////!**/
 
 /*!*SMALL*!*/
 
+/*@media (min-width: 375px) {*/
 
-/*@media (min-width: 425px) {*/
-/*    #header {*/
-/*        margin-left: 50px;*/
-
-/*    }*/
-
-/*    #contact-btn {*/
-/*        text-align: center;*/
-/*    }*/
-
-/*    #intro-header{*/
-/*        margin-right: 10px ;*/
-/*        font-size: 150px;*/
-
-/*    }*/
-
-
-
-
-/*}*/
-
-
-
-
-
-
-/*!*MEDIUM  *!*/
-
-
-/*@media (min-width: 768px) {*/
-/*    #header {*/
-/*        margin-top: 65px;*/
-/*        margin-left: 120px;*/
-/*    }*/
-
-/*    #intro-header{*/
-/*        margin-right: 10px ;*/
-/*        font-size: 90px;*/
-
-/*    }*/
-
-
-/*    #project{*/
-
-/*    }*/
-/*    #profBranding{*/
-
-/*    }*/
-/*    #pubSpeaking{*/
-
-/*    }*/
-
-/*}*/
-
-
-
-
-
-
-
-
-
-
-/*    !*LARGE*!*/
-
-/*@media (min-width: 1024px) {*/
-
-
-
-/*    #header{*/
-/*        margin-left: 180px;*/
-
-
-/*    }*/
-/*}*/
-/*#about-me {*/
-/*    padding-top: 0px;*/
-/*    margin: 20px;*/
-/*}*/
-
-/*#headBgXl{*/
-/*    background-position: -300px;*/
-/*    height: 900px;*/
-/*    width: 1500px;*/
-/*}*/
-
-
-
-
-
-
-
-/*!*EXTRA LARGE*!*/
-
-
-/*@media (min-width: 1440px) {*/
 
 /*    #header {*/
+/*        margin-left: 30px;*/
+/*        padding-top: 80px;*/
 
-/*        margin-left: 150px;*/
-
-/*}*/
-
-/*    #intro-header{*/
-/*        font-size: 110px;*/
 /*    }*/
 
-/*}*/
-
-/*@media (min-width: 2560px) {*/
-
-
-/*    !*#headBgXl{*!*/
-/*    !*    background-position: -600px;*!*/
-/*    !*    height: 900px;*!*/
-/*    !*    width: 100%;*!*/
-/*    !*}*!*/
 /*    #intro-header {*/
-/*        font-size: 140px;*/
+/*        font-size: 75px;*/
+/*        margin-left: 300px;*/
+/*        margin-top: 80px;*/
 /*    }*/
-/*    #title{*/
-/*        font-size: 40px;*/
+/*    #email-btn {*/
+/*        margin-left: 400px;*/
+/*    }*/
+
+/*    #title {*/
+/*        margin-left: 300px;*/
 /*    }*/
 
 /*    #contact-btn {*/
-/*        margin-left: 220px;*/
-/*        font-size: 20px;*/
+/*        margin-left: 95px;*/
 
 /*    }*/
 
+/*<<<<<<< HEAD*/
+
+/*    #portfolio{*/
+
+/*        margin-top: 70px;*/
+/*    }*/
+
+/*    #project {*/
+/*        margin-bottom: 60px;*/
+
+/*    }*/
+
+/*    #profBranding {*/
+/*        margin-bottom: 60px;*/
+
+/*    }*/
+
+
+/*=======*/
+/*>>>>>>> parent of 2c645e0... Spaced icons*/
 /*}*/
+
+
+
+/*!*!*SMALL*!*!*/
+
+
+/*!*@media (min-width: 425px) {*!*/
+/*!*    #header {*!*/
+/*!*        margin-left: 50px;*!*/
+
+/*!*    }*!*/
+
+/*!*    #contact-btn {*!*/
+/*!*        text-align: center;*!*/
+/*!*    }*!*/
+
+/*!*    #intro-header{*!*/
+/*!*        margin-right: 10px ;*!*/
+/*!*        font-size: 150px;*!*/
+
+/*!*    }*!*/
+
+
+/*<<<<<<< HEAD*/
+
+
+/*!*}*!*/
+
+/*=======*/
+/*>>>>>>> parent of 2c645e0... Spaced icons*/
+
+
+
+
+
+/*!*!*MEDIUM  *!*!*/
+
+
+/*!*@media (min-width: 768px) {*!*/
+/*!*    #header {*!*/
+/*!*        margin-top: 65px;*!*/
+/*!*        margin-left: 120px;*!*/
+/*!*    }*!*/
+
+/*!*    #intro-header{*!*/
+/*!*        margin-right: 10px ;*!*/
+/*!*        font-size: 90px;*!*/
+
+/*!*    }*!*/
+
+
+/*!*    #project{*!*/
+
+/*<<<<<<< HEAD*/
+/*!*    }*!*/
+/*!*    #profBranding{*!*/
+
+/*!*    }*!*/
+/*!*    #pubSpeaking{*!*/
+
+/*!*    }*!*/
+/*=======*/
+/*}*/
+/*>>>>>>> parent of 2c645e0... Spaced icons*/
+
+/*!*}*!*/
+
+
+
+
+
+
+
+
+
+
+/*!*    !*LARGE*!*!*/
+
+/*!*@media (min-width: 1024px) {*!*/
+
+
+
+/*!*    #header{*!*/
+/*!*        margin-left: 180px;*!*/
+
+
+/*!*    }*!*/
+/*!*}*!*/
+/*!*#about-me {*!*/
+/*!*    padding-top: 0px;*!*/
+/*!*    margin: 20px;*!*/
+/*!*}*!*/
+
+/*!*#headBgXl{*!*/
+/*!*    background-position: -300px;*!*/
+/*!*    height: 900px;*!*/
+/*!*    width: 1500px;*!*/
+/*!*}*!*/
+
+
+
+
+
+
+
+/*!*!*EXTRA LARGE*!*!*/
+
+
+/*!*@media (min-width: 1440px) {*!*/
+
+/*!*    #header {*!*/
+
+/*!*        margin-left: 150px;*!*/
+
+/*!*}*!*/
+
+/*!*    #intro-header{*!*/
+/*!*        font-size: 110px;*!*/
+/*!*    }*!*/
+
+/*!*}*!*/
+
+/*!*@media (min-width: 2560px) {*!*/
+
+
+/*!*    !*#headBgXl{*!*!*/
+/*!*    !*    background-position: -600px;*!*!*/
+/*!*    !*    height: 900px;*!*!*/
+/*!*    !*    width: 100%;*!*!*/
+/*!*    !*}*!*!*/
+/*!*    #intro-header {*!*/
+/*!*        font-size: 140px;*!*/
+/*!*    }*!*/
+/*!*    #title{*!*/
+/*!*        font-size: 40px;*!*/
+/*!*    }*!*/
+
+/*!*    #contact-btn {*!*/
+/*!*        margin-left: 220px;*!*/
+/*!*        font-size: 20px;*!*/
+
+/*!*    }*!*/
+
+/*!*}*!*/
 
