@@ -14,17 +14,13 @@
 </head>
 <body>
 
-
-    <div class=”wrapper”>
-        <div class="header" style="background-color: black">
             <nav class="row navbar navbar-expand-lg navbar-light">
                 <a class="nav-item nav-link text-white active" href="#">About<span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link text-white" href="#">Projects</a>
                 <a class="nav-item nav-link text-white" href="#">Contact</a>
             </nav>
 
-
-            <div class="row ">
+            <div class="row animated-text">
                 <div class="hello">
                     <h1 class="hello-name" id="name">Hello.<br>
                         <span
@@ -32,13 +28,13 @@
                                 data-period="2000"
                                 data-rotate='[ "Im <br> DeLayne.", "Im a <br> Software <br> Developer." ]'></span></h1>
                 </div>
-
-                <img src="img/NewBGImage.png" height="50%" width="100%"/>
-
             </div>
-        </div>
 
-        <div class="row text-center" id="profilePic">
+
+
+
+
+        <div class="row text-center about-section" id="profilePic">
             <div class="col-md-6">
                 <img src="img/profilePic.png" width="65%"/></div>
             <div class="col-md-6 text-center mt-3" id="about-me-section"><h1 id="about-me">About Me</h1>
@@ -60,7 +56,7 @@
                 felt more "at home" in my career than I do when I am coding!
             </div>
         </div>
-    </div>
+
 
 
     <div class="profile-container mt-5 pt-5">
@@ -75,7 +71,68 @@
             <div class="col-md-4 text-center" id="contact">
                 <a href="#" class="portfolio-list-item"><p><img src="img/icons/email.png" width="30%"/></p></a>
                 <H2>CONTACT</H2>
-            </div>
+
+<!--                jumbotron for contact card-->
+
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="..." class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">INSERT FORM BELOW HERE</h5>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputPassword4">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputAddress">Address</label>
+                                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputAddress2">Address 2</label>
+                                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCity">City</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputState">State</label>
+                                            <select id="inputState" class="form-control">
+                                                <option selected>Choose...</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="inputZip">Zip</label>
+                                            <input type="text" class="form-control" id="inputZip">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                Check me out
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
         </div>
     </div>
