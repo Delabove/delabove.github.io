@@ -12,3 +12,18 @@ body{
 button.navbar-toggler {
     color: white;
 }
+
+#name {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 100px;
+    padding: 1em 2em;
+    font-size: 70px;
+    background: none;
+    color: white;
+}
+
+.hello {
+    font-weight: 200;
+    margin: 0.4em 0;
+    font-size: 3.5em;
+}

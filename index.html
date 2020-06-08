@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="WebsiteStylesheet.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 
     <title>DeLayne LaBove</title>
 
@@ -13,7 +14,6 @@
 </head>
 <body>
 
-<!--Making a change to push index file-->
 
     <div class=”wrapper”>
         <div class="header" style="background-color: black">
@@ -22,8 +22,19 @@
                 <a class="nav-item nav-link text-white" href="#">Projects</a>
                 <a class="nav-item nav-link text-white" href="#">Contact</a>
             </nav>
+
+
             <div class="row ">
+                <div class="hello">
+                    <h1 class="hello-name" id="name">Hello.<br>
+                        <span
+                                class="txt-rotate"
+                                data-period="2000"
+                                data-rotate='[ "Im <br> DeLayne.", "Im a <br> Software <br> Developer." ]'></span></h1>
+                </div>
+
                 <img src="img/NewBGImage.png" height="50%" width="100%"/>
+
             </div>
         </div>
 
@@ -41,10 +52,10 @@
                 potentially see in my professional background. The closest thing I
                 had come to a position in technology was social media marketing and a small exposure to code and graphic
                 design. However, that exposure peaked my curiosity enough to make me
-                consider a career change. <br> It wasn't long after enrolling in Codeup when I realized how my creative, abstract thinking and eye for
+                consider a career change. <br>  <br>It wasn't long after enrolling in Codeup when I realized how my creative, abstract thinking and eye for
                 visual design would be an incredible asset for a developer. My background in haircutting allows me to see things from a designers
                 point of view. My eyes are trained to see symmetry, shape, balance, and proportion. I understand the color wheel from a
-                scientific perspective. <br> This learning journey has been the most fulfilling experience! The thing I have fallen in love with most
+                scientific perspective. <br> <br> This learning journey has been the most fulfilling experience! The thing I have fallen in love with most
                 about my new career is that it challenges me creatively AND intellectually! I've never
                 felt more "at home" in my career than I do when I am coding!
             </div>
@@ -79,6 +90,74 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+
+    <script>
+
+        var TxtRotate = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtRotate.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+            var that = this;
+            var delta = 300 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function() {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function() {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i=0; i<elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+            document.body.appendChild(css);
+        };
+
+
+
+        Resources
+
+
+
+    </script>
 
 
 </body>
