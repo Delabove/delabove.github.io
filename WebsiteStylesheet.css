@@ -149,20 +149,19 @@ button.navbar-toggler {
 
 .profile-pic{
     margin-left: 0px;
-    margin-top: 90px;
-    width: 80%;
+    width: 95%;
 
 }
 .about-section {
     padding: 0;
     margin-top: 800px;
-    font-size: 20px;
+    font-size: 21px;
 
 }
 #about-me-section {
     padding-left: 0px;
-    padding-right: 60px;
-    font-size: 16px;
+    padding-right: 30px;
+    font-size: 21px;
 }
 
 .contact-card {
@@ -209,5 +208,14 @@ button.navbar-toggler {
 
     .coffee-project {
         width: 100%;
+    }
+
+
+    .project-list-item {
+        width: 10%;
+    }
+
+    .portfolio-list-item {
+        width: 10%;
     }
 }
