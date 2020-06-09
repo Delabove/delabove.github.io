@@ -40,3 +40,158 @@ button.navbar-toggler {
 .about-section {
     margin-top: 550px;
 }
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px ;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#icoOpen {
+    margin-top: 20px;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.profile-pic {
+    margin: 0px;
+}
+
+/*RESPONSIVE DESIGN*/
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    #name {
+        font-family: 'Raleway', sans-serif;
+        margin-top: 80px;
+        margin-left: 200px;
+        padding: 1em 2em;
+        font-size: 60px;
+        background: transparent;
+        color: white;
+
+    }
+.profile-pic{
+    margin-left: 0px;
+    margin-top: 110px;
+    width: 80%;
+
+}
+    .about-section {
+        padding-left: 0px;
+        padding-rigt: 60px;
+        margin-top: 800px;
+        font-size: 12px;
+
+    }
+    #about-me-section {
+        padding-left: 0px;
+        padding-right: 60px;
+    }
+}
+
+
+
+
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+.profile-pic{
+    margin-left: 0px;
+    margin-top: 90px;
+    width: 80%;
+
+}
+.about-section {
+    padding: 0;
+    margin-top: 800px;
+    font-size: 50px;
+
+}
+#about-me-section {
+    padding-left: 0px;
+    padding-right: 60px;
+}
+
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    #name {
+        font-family: 'Raleway', sans-serif;
+        margin-top: 30px;
+        margin-left: 200px;
+        padding: 1em 2em;
+        font-size: 90px;
+        background: transparent;
+        color: white;
+
+    }
+
+.profile-pic{
+    margin-left: 0px;
+    margin-top: 40px;
+    width: 70%;
+
+}
+.about-section {
+    padding: 0;
+    margin-top: 900px;
+    font-size: 20px;
+
+}
+#about-me-section {
+    margin-top: 50px;
+    padding-left: 0px;
+    padding-right: 80px;
+}
+
+}

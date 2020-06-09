@@ -13,12 +13,29 @@
 
 </head>
 <body>
+            <!--sliding side bar nav-->
 
-            <nav class="row navbar navbar-expand-lg navbar-light">
-                <a class="nav-item nav-link text-white active" href="#">About<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link text-white" href="#">Projects</a>
-                <a class="nav-item nav-link text-white" href="#">Contact</a>
+            <div id="sideNavigation" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact Me</a>
+            </div>
+
+            <nav class="topnav">
+                <a href="#" onclick="openNav()">
+                    <svg width="30" height="30" id="icoOpen">
+                        <path d="M0,5 30,5" stroke="#998462" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#998462" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#998462" stroke-width="5"/>
+                    </svg>
+                </a>
+
             </nav>
+
+
+<!--main body-->
+
 
             <div class="row animated-text">
                 <div class="hello">
@@ -35,8 +52,8 @@
 
 
         <div class="row text-center about-section" id="profilePic">
-            <div class="col-md-6">
-                <img src="img/profilePic.png" width="65%"/></div>
+            <div class="col-md-6 ">
+                <img class="profile-pic" src="img/profilePic.png" width="65%"/></div>
             <div class="col-md-6 text-center mt-3" id="about-me-section"><h1 id="about-me">About Me</h1>
                 <p>
                     <img src="img/icons/Untitled%20design%20(5).png" width="30%"/>
@@ -107,7 +124,19 @@
 
 
     <script>
+    // sliding nav
+    function openNav() {
+        document.getElementById("sideNavigation").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
 
+    function closeNav() {
+        document.getElementById("sideNavigation").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+
+    }
+
+        // introduction animation
         var TxtRotate = function(el, toRotate, period) {
             this.toRotate = toRotate;
             this.el = el;
