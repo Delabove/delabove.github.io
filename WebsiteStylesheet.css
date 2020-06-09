@@ -206,10 +206,17 @@ button.navbar-toggler {
         padding-right: 80px;
     }
 
-    .coffee-project {
-        width: 100%;
+    .portfolio-container {
+        margin-top: 250px;
     }
 
+    .coffee-project {
+        width: 70%;
+    }
+
+    .weatherMap-project {
+        width: 70%;
+    }
 
     .project-list-item {
         width: 10%;
@@ -217,5 +224,15 @@ button.navbar-toggler {
 
     .portfolio-list-item {
         width: 10%;
+    }
+
+
+    .contact-card {
+        width: 50%;
+        margin-left: 450px;
+    }
+
+    #contact {
+        margin-top: 150px;
     }
 }
