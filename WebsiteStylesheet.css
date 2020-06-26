@@ -114,6 +114,25 @@ button.navbar-toggler {
     margin: 0px;
 }
 
+
+/*.text {*/
+/*    animation: flyin 1.2s ease forwards;*/
+/*    opacity: 0;*/
+/*    transform: scale(4);*/
+/*    filter: blur(4px);*/
+
+
+/*}*/
+
+/*@keyframes flyin {*/
+/*    to {*/
+/*        filter: blur(0);*/
+/*        transform: scale(1);*/
+/*        opacity: 1;*/
+
+/*    }*/
+/*}*/
+
 /*RESPONSIVE DESIGN*/
 
 /*// Medium devices (tablets, 768px and up)*/
@@ -174,7 +193,7 @@ button.navbar-toggler {
 #about-me-section {
     padding-left: 0px;
     padding-right: 30px;
-    font-size: 21px;
+    font-size: 19px;
 }
 
 .contact-card {
@@ -203,14 +222,14 @@ button.navbar-toggler {
     .profile-pic {
         margin-left: 0px;
         margin-top: 100px;
-        width: 65%;
+        width: 45%;
 
     }
 
     .about-section {
         padding: 0;
         margin-top: 900px;
-        font-size: 20px;
+        font-size: 19px;
 
     }
 
@@ -242,8 +261,8 @@ button.navbar-toggler {
 
 
     .contact-card {
-        width: 75%;
-        margin-left: 168px;
+        width: 70%;
+        margin-left: 210px;
     }
 
     #contact {
