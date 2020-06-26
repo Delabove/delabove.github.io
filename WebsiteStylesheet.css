@@ -130,22 +130,26 @@ button.navbar-toggler {
     }
 .profile-pic{
     margin-left: 0px;
-    margin-top: 110px;
-    width: 65%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    width: 45%;
 
 }
     .about-section {
         padding-left: 0px;
-        padding-rigt: 60px;
+
         margin-top: 800px;
         font-size: 16px;
 
     }
     #about-me-section {
         padding-left: 0px;
-        padding-right: 60px;
+
         margin-left: 0px;
 
+    }
+    .contact-card {
+        margin-left: 70px;
     }
 }
 
@@ -158,7 +162,7 @@ button.navbar-toggler {
 
 .profile-pic{
     margin-left: 0px;
-    width: 95%;
+    width: 65%;
 
 }
 .about-section {
@@ -175,6 +179,7 @@ button.navbar-toggler {
 
 .contact-card {
     padding: 20px;
+
 }
 
 .form-group{
@@ -197,8 +202,8 @@ button.navbar-toggler {
 
     .profile-pic {
         margin-left: 0px;
-        margin-top: 40px;
-        width: 70%;
+        margin-top: 200px;
+        width: 75%;
 
     }
 
@@ -237,8 +242,8 @@ button.navbar-toggler {
 
 
     .contact-card {
-        width: 50%;
-        margin-left: 450px;
+        width: 75%;
+        margin-left: 150px;
     }
 
     #contact {
