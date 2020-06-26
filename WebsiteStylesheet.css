@@ -146,14 +146,10 @@ button.navbar-toggler {
 
     #about-me-section {
         padding-left: 0px;
-
         margin-left: 0px;
 
     }
 
-    #project{
-        margin-top: 180px;
-    }
 
     .project-list-item {
         width: 10%;
@@ -167,11 +163,7 @@ button.navbar-toggler {
         margin-top: 200px;
     }
 
-    .contact-card {
-        width: 70%;
-        margin-top: 70px;
 
-    }
 }
 
 
