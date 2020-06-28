@@ -2,40 +2,41 @@
 
 console.log("hello.")
 
-// BASIC CAROUSEL CODE
-
-// START
-// IMAGE ARRAY
-// TIME BETWEEN EACH IMAGE
-// FUNCTION TO LOOP THROUGH THE IMAGES
+// BASIC CAROUSEL STRUCTURE
 
         let i = 0;
         let imageArray = [];
-        let time = 5000;
+        let time = 9000;
 
         imageArray[0] = 'Project-GIFS/coffee-project.gif';
         imageArray[1] = 'Project-GIFS/weatherMap.gif';
         imageArray[2] = "Project-GIFS/Adlister.gif";
 
 
-function changingImages() {
-    document.slide.src = imageArray[i];
-    if(i < imageArray.length -1) {
-        i++;
-    } else {
-        i = 0;
-    }
-    setTimeout('changingImages()', time);
+        function changingImages() {
+            document.slide.src = imageArray[i];
+            if(i < imageArray.length -1) {
+                i++;
+            } else {
+                i = 0;
+            }
+            setTimeout('changingImages()', time);
+        }
+        window.onload=changingImages();
+
+        // MODAL
+
+var modal = document.getElementById("myModal");
+
+var img = document.getElementById("mod-img");
+var modalImg = document.getElementById("img01");
+
+img.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
 }
-window.onload=changingImages();
-// imageArray[0] = "image_1.gif";
-// imageArray[1] = "image_2.gif";
-// imageArray[2] = "image_3.gif";
-//
-// function swapImage()
-// {
-//     document.slide.src = path[i];
-//     if(i < path.length - 1) i++;
-//     else i = 0;
-//     setTimeout("swapImage()",3000);
-// }
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+    modal.style.display = "none";
+}
