@@ -1,0 +1,283 @@
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;!important;
+    padding: 0px;!important;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0px;!important;
+    padding: 0px;!important;
+    /*box-sizing: content-box;*/
+    background-image: url("../img/BG-lang.png");
+    background-repeat: no-repeat;
+
+}
+
+
+.navbar {
+    background-color: black;
+}
+
+button.navbar-toggler {
+    color: white;
+}
+
+div.languages{
+    opacity: 80%;
+}
+
+.animated-text {
+    position: absolute;
+}
+
+#name {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 100px;
+    margin-left: 40px;
+    padding: 1em 2em;
+    font-size: 40px;
+    background: transparent;
+    color: white;
+
+}
+
+.hello {
+    font-weight: 200;
+    margin: 0.4em 0;
+    font-size: 3.5em;
+}
+
+.about-section {
+    margin-top: 550px;
+    font-size: 12px;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px ;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#icoOpen {
+    margin-top: 20px;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+
+
+/*RESPONSIVE DESIGN*/
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    #name {
+        font-family: 'Raleway', sans-serif;
+        margin-top: 80px;
+        margin-left: 200px;
+        padding: 1em 2em;
+        font-size: 60px;
+        background: transparent;
+        color: white;
+
+    }
+
+    .profile-pic {
+        margin-left: 0px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        width: 45%;
+
+    }
+
+    .about-section {
+        padding-left: 0px;
+
+        margin-top: 800px;
+        font-size: 16px;
+
+    }
+
+    #about-me-section {
+        padding-left: 0px;
+        margin-left: 0px;
+
+    }
+
+    .project-list-item {
+        width: 10%;
+    }
+
+    .portfolio-list-item {
+        width: 10%;
+    }
+
+    #contact {
+        margin-top: 200px;
+    }
+
+
+}
+
+
+    /*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+.profile-pic{
+    margin-left: 0px;
+    width: 65%;
+    margin-top: 100px;
+
+}
+
+.about-section {
+    padding: 0;
+    margin-top: 800px;
+    font-size: 19px;
+
+}
+#about-me-section {
+    font-size: 15px;
+}
+
+
+#project{
+    margin-top: 180px;
+}
+
+    .project-list-item {
+        width: 10%;
+
+    }
+
+    .portfolio-list-item {
+        width: 10%;
+    }
+
+    #contact {
+        margin-top: 200px;
+    }
+
+    .contact-card {
+        width: 70%;
+
+    }
+
+.form-group{
+    text-align: center;
+}
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    #name {
+        font-family: 'Raleway', sans-serif;
+        margin-top: 30px;
+        margin-left: 200px;
+        padding: 1em 2em;
+        font-size: 90px;
+        background: transparent;
+        color: white;
+
+    }
+
+    .profile-pic {
+        margin-left: 0px;
+        margin-top: 100px;
+        width: 45%;
+
+    }
+
+    .about-section {
+        padding: 0;
+        margin-top: 900px;
+        font-size: 19px;
+
+    }
+
+    #about-me-section {
+        margin-top: 50px;
+        padding-left: 0px;
+        padding-right: 80px;
+    }
+
+    .portfolio-container {
+        margin-top: 250px;
+    }
+
+    .coffee-project {
+        width: 70%;
+    }
+
+    .weatherMap-project {
+        width: 70%;
+    }
+
+    .project-list-item {
+        width: 10%;
+    }
+
+    .portfolio-list-item {
+        width: 10%;
+    }
+
+
+    #contact {
+        margin-top: 200px;
+    }
+
+    .contact-card {
+        width: 70%;
+
+    }
+}
