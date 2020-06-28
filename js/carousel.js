@@ -34,6 +34,7 @@ var modalImg = document.getElementById("img01");
 img.onclick = function () {
     modal.style.display = "block";
     modalImg.src = this.src;
+    modalImg.style.display = ""
 }
 
 var span = document.getElementsByClassName("close")[0];
@@ -41,14 +42,25 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i;
+    var tabcontent =  document.getElementsByClassName("tabcontent");
+    var tablinks;
 
+    // Get all elements with class="tabcontent" and hide them
 
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
 
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
 
-function myFunction(imgs) {
-    var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
-    expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-    expandImg.parentElement.style.display = "block";
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
 }

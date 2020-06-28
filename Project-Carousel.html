@@ -11,57 +11,40 @@
     <img id="mod-img" name="slide" width="1066" height="598" src="Project-GIFS/coffee-project.gif">
 
 
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
 
-        <div class="row">
-            <div class="column">
-                <img src="img/dadlister.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="img/quar-coff.png" alt="Snow" style="width: 100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="img/weather.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <div class="container">
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" style="max-width: 100%">
+
+
+            <div class="middle">
+               <div class="summary">
+                   <img src="img/icons/laptop.png" height="500" width="500"/></div>
             </div>
         </div>
-
-        <div class="container">
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-            <img id="expandedImg" style="width:100%">
-            <div id="imgtext"></div>
-        </div>
-
     </div>
 
-<!--    tabbed image gallery-->
-
-<!--    &lt;!&ndash; The four columns &ndash;&gt;-->
-<!--    <div class="row">-->
-<!--        <div class="column">-->
-<!--            <img src="img/dadlister.png" alt="Nature" style="width:100%" onclick="myFunction(this);">-->
-<!--        </div>-->
-<!--        <div class="column">-->
-<!--            <img src="img/quar-coff.png" alt="Snow" style="height: 50px; width: 100px" onclick="myFunction(this);">-->
-<!--        </div>-->
-<!--        <div class="column">-->
-<!--            <img src="img/weather.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">-->
-<!--        </div>-->
+<!--    <div class="tab">-->
+<!--        <button class="tablinks" onmouseover="openCity(event, 'London')">London</button>-->
+<!--        <button class="tablinks" onmouseover="openCity(event, 'Paris')">Paris</button>-->
+<!--        <button class="tablinks" onmouseover="openCity(event, 'Tokyo')">Tokyo</button>-->
 <!--    </div>-->
 
-<!--    <div class="container">-->
-<!--        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>-->
-<!--        <img id="expandedImg" style="width:100%">-->
-<!--        <div id="imgtext"></div>-->
+<!--    <div id="London" class="tabcontent">-->
+<!--        <h3>London</h3>-->
+<!--        <p>London is the capital city of England.</p>-->
 <!--    </div>-->
 
+<!--    <div id="Paris" class="tabcontent">-->
+<!--        <h3>Paris</h3>-->
+<!--        <p>Paris is the capital of France.</p>-->
+<!--    </div>-->
 
-
-
-
-
-
+<!--    <div id="Tokyo" class="tabcontent">-->
+<!--        <h3>Tokyo</h3>-->
+<!--        <p>Tokyo is the capital of Japan.</p>-->
+<!--    </div>-->
 
     <script src="js/carousel.js"></script>
 </body>
