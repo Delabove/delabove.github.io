@@ -82,7 +82,24 @@ width: 50%;
     background-color: white;
     width: 900px;
 
+}
 
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 @-webkit-keyframes zoom {
@@ -101,3 +118,4 @@ width: 50%;
         width: 100%;
     }
 }
+
