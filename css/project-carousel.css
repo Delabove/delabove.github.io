@@ -84,7 +84,9 @@ width: 50%;
 .dadlist-summary {
     background-color: white;
     width: 900px;
-    margin-top: 650px;
+    margin-top: 600px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 100px;
     border-radius: 5px;
     box-shadow: rgba(241, 241, 241, 0.41) 15px 15px 15px;
