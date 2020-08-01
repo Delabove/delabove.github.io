@@ -37,7 +37,7 @@ div.languages{
     color: #d6cac8;
     vertical-align: center;
     text-align: center;
-    margin-top: 164px;
+    margin-top: 100px;
     margin-right: 25px;
     margin-left: 25px;
 }
@@ -55,6 +55,11 @@ div.languages{
 #contact{
     margin-top: 50px;
 }
+ .contact-card{
+     margin-top: 50px;
+     box-shadow: #111111 10px 10px 10px;
+     margin-bottom: 100px;
+ }
 
 .hello {
     font-weight: 200;
@@ -133,20 +138,24 @@ div.languages{
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    #name {
-        font-family: 'Raleway', sans-serif;
-        margin-top: 80px;
-        margin-left: 200px;
-        padding: 1em 2em;
-        font-size: 60px;
-        background: transparent;
-        color: white;
 
+    #mainHeader{
+        font-size: 40px;
     }
+
+    /*#name {*/
+    /*    font-family: 'Raleway', sans-serif;*/
+    /*    margin-top: 80px;*/
+    /*    margin-left: 200px;*/
+    /*    padding: 1em 2em;*/
+    /*    font-size: 60px;*/
+    /*    background: transparent;*/
+    /*    color: white;*/
+
+    /*}*/
 
     .profile-pic {
         margin-left: 0px;
-        margin-top: 80px;
         margin-bottom: 40px;
         width: 45%;
 
@@ -155,7 +164,7 @@ div.languages{
     .about-section {
         padding-left: 0px;
 
-        margin-top: 800px;
+        margin-top: 500px;
         font-size: 16px;
 
     }
@@ -176,8 +185,11 @@ div.languages{
 
     #contact {
         margin-top: 200px;
-    }
 
+    }
+    .contact-card{
+        width: 35rem;
+    }
 
 }
 
