@@ -21,7 +21,7 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a id="about-btn" href="#">About</a>
                 <a id="project-btn" href="#">Projects</a>
-                <a id="contat-btn" href="#">Contact Me</a>
+                <a id="contact-btn" href="#">Contact Me</a>
             </div>
 
             <nav class="topnav">
@@ -39,22 +39,10 @@ off canvas menu w/opacity-->
 
 <!--main body-->
 
-
-<!--            <div class="row animated-text">-->
-<!--                <div class="hello">-->
-<!--                    <h1 class="hello-name" id="name">Hello.<br>-->
-<!--                        <span-->
-<!--                                class="txt-rotate"-->
-<!--                                data-period="2000"-->
-<!--                                data-rotate='[ "Im <br> DeLayne.", "Im a <br> Software <br> Developer." ]'></span></h1>-->
-<!--                </div>-->
-
-<!--            </div>-->
-
             <div id="mainHeader">
                 <p>Designer by experience.</p>
                 <p>
-                    <img src="img/icons/Untitled%20design%20(5).png" width="30%"/>
+                    <img src="img/icons/Untitled%20design%20(5).png" width="8%"/>
                 </p>
                 <p>Developer by design.</p>
             </div>
@@ -141,7 +129,7 @@ off canvas menu w/opacity-->
                     <a href="#"><p><img class="portfolio-list-item mt-5" src="img/icons/email.png" width="20%"/></p></a>
                     <h3>CONTACT:</h3>
                 </div>
-                <div class="card contact-card mx-auto" style="left: 15px">
+                <div class="card contact-card mx-auto" id="contact-card" style="left: 15px">
                     <img src="img/laptop-contact.png" width="100%"/>
                     <div class="card-body">
                         <div class="form-row justify-content-center">
@@ -164,8 +152,10 @@ off canvas menu w/opacity-->
 
 
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 
             <script>
                 "use script";
@@ -183,78 +173,33 @@ off canvas menu w/opacity-->
 
                 }
 
-                // // introduction animation
-                // var TxtRotate = function(el, toRotate, period) {
-                //     this.toRotate = toRotate;
-                //     this.el = el;
-                //     this.loopNum = 0;
-                //     this.period = parseInt(period, 10) || 2000;
-                //     this.txt = '';
-                //     this.tick();
-                //     this.isDeleting = false;
-                // };
-                //
-                // TxtRotate.prototype.tick = function() {
-                //     var i = this.loopNum % this.toRotate.length;
-                //     var fullTxt = this.toRotate[i];
-                //
-                //     if (this.isDeleting) {
-                //         this.txt = fullTxt.substring(0, this.txt.length - 1);
-                //     } else {
-                //         this.txt = fullTxt.substring(0, this.txt.length + 1);
-                //     }
-                //
-                //     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-                //
-                //     var that = this;
-                //     var delta = 300 - Math.random() * 100;
-                //
-                //     if (this.isDeleting) { delta /= 2; }
-                //
-                //     if (!this.isDeleting && this.txt === fullTxt) {
-                //         delta = this.period;
-                //         this.isDeleting = true;
-                //     } else if (this.isDeleting && this.txt === '') {
-                //         this.isDeleting = false;
-                //         this.loopNum++;
-                //         delta = 500;
-                //     }
-                //
-                //     setTimeout(function() {
-                //         that.tick();
-                //     }, delta);
-                // };
-
                 //id="about-btn"
                 // id="project-btn
-                // id="contat-btn"
-                $('#about-btn').click(function() {
-                    $.scrollTo($('#profilePic'), 2000);
+                // id="contact-btn"
+
+                $(document).ready(function (){
+                    $("#about-btn").click(function (){
+                        $('html, body').animate({
+                            scrollTop: $(".about-section").offset().top
+                        }, 900);
+                    });
+
+                    $("#project-btn").click(function (){
+                        $('html, body').animate({
+                            scrollTop: $("#portfolio").offset().top
+                        }, 900);
+                    });
+                    $("#contact-btn").click(function (){
+                        $('html, body').animate({
+                            scrollTop: $("#contact-card").offset().top
+                        }, 900);
+                    });
+
+
+
                 });
 
-                // $("#about-btn").click(function() {
-                //     $('html, body').animate({
-                //         scrollTo: $("#profilePic").offset().top
-                //     }, 2000);
-                // });
-                window.onload = function() {
-                    var elements = document.getElementsByClassName('txt-rotate');
-                    for (var i=0; i<elements.length; i++) {
-                        var toRotate = elements[i].getAttribute('data-rotate');
-                        var period = elements[i].getAttribute('data-period');
-                        if (toRotate) {
-                            new TxtRotate(elements[i], JSON.parse(toRotate), period);
-                        }
-                    }
-                    // INJECT CSS
-                    var css = document.createElement("style");
-                    css.type = "text/css";
-                    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-                    document.body.appendChild(css);
-                };
 
-
-                console.log("hello.")
 
                 // BASIC CAROUSEL STRUCTURE
 

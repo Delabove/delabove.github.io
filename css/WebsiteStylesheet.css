@@ -247,7 +247,7 @@ div.languages{
 
     .about-section {
         padding: 0;
-        margin-top: 400px;
+        margin-top: 700px;
         font-size: 19px;
 
     }
@@ -271,6 +271,10 @@ div.languages{
         margin-left: 200px;
     }
 
+    #portfolio{
+        margin-top: 300px;
+    }
+
     .project-list-item {
         width: 10%;
     }
@@ -281,7 +285,7 @@ div.languages{
 
 
     #contact {
-        margin-top: 200px;
+        margin-top: 400px;
     }
 
     .contact-card {
