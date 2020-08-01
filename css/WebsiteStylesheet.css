@@ -29,10 +29,18 @@ div.languages{
     opacity: 80%;
 }
 
-.animated-text {
-    position: absolute;
+#mainHeader{
+    font-size: 30px;
+    font-family: "Open Sans";
+    font-weight: bolder;
+    color: #d6cac8;
+    color: #d6cac8;
+    vertical-align: center;
+    text-align: center;
+    margin-top: 164px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
-
 #name {
     font-family: 'Raleway', sans-serif;
     margin-top: 100px;
@@ -44,6 +52,10 @@ div.languages{
 
 }
 
+#contact{
+    margin-top: 50px;
+}
+
 .hello {
     font-weight: 200;
     margin: 0.4em 0;
@@ -51,7 +63,7 @@ div.languages{
 }
 
 .about-section {
-    margin-top: 550px;
+    margin-top: 225px;
     font-size: 12px;
 }
 
