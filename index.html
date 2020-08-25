@@ -90,10 +90,18 @@ off canvas menu w/opacity-->
             <div class="text-center" id="project">
                 <a href="#"><p><img class="project-list-item" src="img/icons/laptop.png" width="20%"/></p></a>
                 <h3>PROJECTS</h3>
+
                 <iframe
                         src="https://www.youtube.com/embed/eLvKwpFj1cI">
                 </iframe>
+
+                <h3>CODEUP PROJECTS</h3>
+
                 <img id="mod-img" name="slide" width="1066" height="598" src="Project-GIFS/coffee-project.gif">
+
+                <h3>CONTINUED EDUCATION PROJECTS</h3>
+
+                <img id="sm-projects" name="basicSlide" width="1066" height="598" src="Project-GIFS/coffee-project.gif">
 
 
 
@@ -211,7 +219,7 @@ off canvas menu w/opacity-->
                 imageArray[2] = "Project-GIFS/Adlister.gif";
                 imageArray[3] = 'Project-GIFS/coffee-project.gif';
                 imageArray[4] = 'Project-GIFS/weatherMap.gif';
-                imageArray[5] = "Project-GIFS/calc.gif";
+
 
 
 
@@ -225,47 +233,24 @@ off canvas menu w/opacity-->
                     setTimeout('changingImages()', time);
                 }
                 changingImages();
-                //
-                // // MODAL
-                //
-                // var modal = document.getElementById("myModal");
-                //
-                // var img = document.getElementById("mod-img");
-                // var modalImg = document.getElementById("img01");
-                //
-                // img.onclick = function () {
-                //     modal.style.display = "block";
-                //     modalImg.src = this.src;
-                //     modalImg.style.display = ""
-                // }
-                //
-                // var span = document.getElementsByClassName("close")[0];
-                // span.onclick = function() {
-                //     modal.style.display = "none";
-                // }
-                //
-                // function openCity(evt, cityName) {
-                //     // Declare all variables
-                //     var i;
-                //     var tabcontent =  document.getElementsByClassName("tabcontent");
-                //     var tablinks;
-                //
-                //     // Get all elements with class="tabcontent" and hide them
-                //
-                //     for (i = 0; i < tabcontent.length; i++) {
-                //         tabcontent[i].style.display = "none";
-                //     }
-                //
-                //     // Get all elements with class="tablinks" and remove the class "active"
-                //     tablinks = document.getElementsByClassName("tablinks");
-                //     for (i = 0; i < tablinks.length; i++) {
-                //         tablinks[i].className = tablinks[i].className.replace(" active", "");
-                //     }
-                //
-                //     // Show the current tab, and add an "active" class to the link that opened the tab
-                //     document.getElementById(cityName).style.display = "block";
-                //     evt.currentTarget.className += " active";
-                // }
+
+               //basic small projects
+
+                let j = 0;
+                let basicArray = [];
+                let timed = 10000;
+                basicArray[1] = "Project-GIFS/calc.gif";
+                function changeImages() {
+                    document.basicSlide.src = basicArray[i];
+                    if(i < basicArray.length -1) {
+                        j++;
+                    } else {
+                        j = 0;
+                    }
+                    setTimeout('changeImages()', timed);
+                }
+                changeImages();
+
 
             </script>
 
