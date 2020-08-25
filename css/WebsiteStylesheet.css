@@ -187,27 +187,29 @@ div.languages{
     /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
-.profile-pic{
-    margin-left: 0px;
-    width: 65%;
-    margin-top: 100px;
+    .profile-pic{
+        margin-left: 0px;
+        width: 65%;
+        margin-top: 100px;
 
-}
+    }
 
-.about-section {
-    padding: 0;
-    margin-top: 800px;
-    font-size: 19px;
+    .about-section {
+        padding: 0;
+        margin-top: 800px;
+        font-size: 19px;
 
-}
-#about-me-section {
-    font-size: 15px;
-}
+    }
+    #about-me-section {
+        font-size: 15px;
+    }
 
 
-#project{
-    margin-top: 180px;
-}
+    #project{
+        margin-top: 180px;
+    }
+
+
 
     .project-list-item {
         width: 10%;
@@ -268,11 +270,14 @@ div.languages{
     }
 
     #project{
-        margin-left: 200px;
+        margin-left: 384px;
     }
 
     #portfolio{
         margin-top: 300px;
+    }
+    #dev-day, #cod-ed, #con-ed{
+        margin-top: 150px;
     }
 
     .project-list-item {
