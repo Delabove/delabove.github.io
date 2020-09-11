@@ -1,11 +1,11 @@
-/** { border: 1px solid black; }*/
+* { border: 1px solid black; }
 html {
 
     margin: 0px;!important;
     padding: 0px;!important;
     overflow-x: hidden;
 }
-/**/
+
 body{
     width: 100%;
     height: 100%;
@@ -17,31 +17,21 @@ body{
     background-repeat: no-repeat;
 }
 
-
-
-/**/
-
 main{
-/**/
-    margin: auto;
-    padding: 10px;
-
-}
-
-.navbar {
-    background-color: black;
+    margin: 0 auto;
+    padding: 0;
 }
 
 button.navbar-toggler {
     color: white;
 }
-/**/
+
 div.languages{
     opacity: 80%;
 }
-/**/
+
 #mainHeader{
-    font-size: 30px;
+    font-size: 27px;
     font-family: "Open Sans";
     font-weight: bolder;
     color: #d6cac8;
@@ -52,21 +42,12 @@ div.languages{
     margin-right: 25px;
     margin-left: 25px;
 }
-#name {
-    font-family: 'Raleway', sans-serif;
-    margin-top: 100px;
-    margin-left: 40px;
-    padding: 1em 2em;
-    font-size: 40px;
-    background: transparent;
-    color: white;
-/**/
-}
 
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+
 }
 
 .menu li {
@@ -75,6 +56,8 @@ div.languages{
     background-color : #998462;
     color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-size: 16px;
+    width: 81px;
 }
 
 .menu li:hover {
@@ -84,12 +67,14 @@ div.languages{
 #project-description{
     display: flex;
     justify-content: center;
+
 }
 
 
 
 
-/**/
+
+
 #contact{
     margin-top: 50px;
 }
@@ -168,12 +153,16 @@ div.languages{
     background-color: gray;
     color: white;
 }
-/**/
-/**/
-/**/
-/**/
+
+
+
+
+
 /*RESPONSIVE DESIGN*/
-/**/
+
+
+
+
 /*!/ Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 /**/
@@ -332,5 +321,11 @@ div.languages{
     .contact-card {
         width: 44rem;
 
+    }
+}
+@media screen and (min-width: 1200px) {
+    .menu li {
+        font-size: 30px;
+        width: 133px;
     }
 }
