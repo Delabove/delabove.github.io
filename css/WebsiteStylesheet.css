@@ -33,13 +33,9 @@ button.navbar-toggler {
     height: 200px;
 }
 
-em.welcome-head{
-    font-size: 20px;
-    color: #818181;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+#wel-img{
+    height:150px;
+    width: 150px;
 }
 
 .menu ul {
@@ -182,13 +178,17 @@ em.welcome-head{
 
     #header-img {
         width: 580px;
-        height: 580px;
+        height: 577px;
     }
     .header {
         height: 580px;
     }
 
 
+    #wel-img{
+        height:450px;
+        width: 450px;
+    }
 
 
 
