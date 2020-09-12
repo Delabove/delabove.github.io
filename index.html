@@ -72,26 +72,114 @@ off canvas menu w/opacity-->
         <!--project grid....-->
 
                     <div class="row project-menu">
+
                         <div class="col-3 menu">
                             <ul>
-                                <li>project 1</li>
-                                <li>project 2</li>
-                                <li>project 3</li>
+                                <li href="#" id="texas-fresh">React Landing Page</li>
+                                <div class="col-9 project-description" >
+                                    <div class="project-container">
+                                        <div id="texasFresh" style="display:none">
+                                            <h1>Texas Fresh Blog Landing Page</h1>
+                                            <div><img style="width: 70%;" src="Project-GIFS/ReactLanding.gif"/></div>
+                                            <p>Project Description</p>
+                                            <a href="https://delabove.github.io/React-Blog-Layout/"> Welcome to Texas Fresh </a>
+                                            <br>
+                                            <a>Project code link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li href="#" id="social-code">Full Stack Java Application</li>
+                                <div class="col-9 project-description">
+                                    <div class="project-container">
+                                        <div id="socialCode" style="display:none">
+                                            <h1>Texas Fresh Blog Landing Page</h1>
+                                            <div><img style="width: 70%;" src="Project-GIFS/SocialCode.gif"/></div>
+                                            <p>Project Description</p>
+                                            <a href="https://delabove.github.io/React-Blog-Layout/"> Welcome to Texas Fresh </a>
+                                            <br>
+                                            <a>Project code link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li href="#" id="personal-blog">Spring Boot Blog</li>
+                                <div class="col-9 project-description">
+                                    <div class="project-container">
+                                        <div id="personalBlog" style="display:none">
+                                            <h1>Texas Fresh Blog Landing Page</h1>
+                                            <div><img style="width: 70%;" src="Project-GIFS/ReactLanding.gif"/></div>
+                                            <p>Project Description</p>
+                                            <a href="https://delabove.github.io/React-Blog-Layout/"> Welcome to Texas Fresh </a>
+                                            <br>
+                                            <a>Project code link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li href="#" id="adlister">Java Adlister</li>
+                                <div class="col-9 project-description">
+                                    <div class="project-container">
+                                        <div id="dadlister" style="display:none">
+                                            <h1>Texas Fresh Blog Landing Page</h1>
+                                            <div><img style="width: 70%;" src="Project-GIFS/ReactLanding.gif"/></div>
+                                            <p>Project Description</p>
+                                            <a href="https://delabove.github.io/React-Blog-Layout/"> Welcome to Texas Fresh </a>
+                                            <br>
+                                            <a>Project code link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li href="#" id="coffee">JavaScript Project</li>
+                                <div class="col-9 project-description">
+                                    <div class="project-container">
+                                        <div id="coffeeMenu" style="display:none">
+                                            <h1>Texas Fresh Blog Landing Page</h1>
+                                            <div><img style="width: 70%;" src="Project-GIFS/ReactLanding.gif"/></div>
+                                            <p>Project Description</p>
+                                            <a href="https://delabove.github.io/React-Blog-Layout/"> Welcome to Texas Fresh </a>
+                                            <br>
+                                            <a>Project code link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li href="#" id="weather-map">JavaScript + JQuery</li>
+                                <div class="col-9 project-description">
+                                    <div class="project-container">
+                                        <div id="weatherMap" style="display:none">
+                                            <h1>Texas Fresh Blog Landing Page</h1>
+                                            <div><img style="width: 70%;" src="Project-GIFS/ReactLanding.gif"/></div>
+                                            <p>Project Description</p>
+                                            <a href="https://delabove.github.io/React-Blog-Layout/"> Welcome to Texas Fresh </a>
+                                            <br>
+                                            <a>Project code link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li href="#" id="calc">React Patterns</li>
+                                <div class="col-9 project-description">
+                                    <div class="project-container">
+                                        <div id="reactCalc" style="display:none">
+                                            <h1>Texas Fresh Blog Landing Page</h1>
+                                            <div><img style="width: 70%;" src="Project-GIFS/ReactLanding.gif"/></div>
+                                            <p>Project Description</p>
+                                            <a href="https://delabove.github.io/React-Blog-Layout/"> Welcome to Texas Fresh </a>
+                                            <br>
+                                            <a>Project code link</a>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </ul>
                         </div>
-                        <div class="col-9" id="project-description">
-                            <div>
-                                <h1>Project Title</h1>
-                                <div>Project image</div>
-                                <p>Project Description</p>
-                                <a>Landing Link</a>
-                                <br>
-                                <a>Project code link</a>
-                            </div>
-                        </div>
-                    </div>
 
+
+                    </div>
+<!--        <div class="nav-wrapper">-->
+<!--            <div id="sideNavigation" class="sidenav">-->
+<!--                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+<!--                <a id="about-btn" href="#">About</a>-->
+<!--                <a id="project-btn" href="#">Projects</a>-->
+<!--                <a id="contact-btn" href="#">Contact Me</a>-->
+<!--            </div>-->
+<!--        </div>-->
 
 
         <!--TODO
@@ -175,9 +263,6 @@ off canvas menu w/opacity-->
 
                 }
 
-                //id="about-btn"
-                // id="project-btn
-                // id="contact-btn"
 
                 $(document).ready(function (){
                     $("#about-btn").click(function (){
@@ -195,56 +280,71 @@ off canvas menu w/opacity-->
                         $('html, body').animate({
                             scrollTop: $("#contact-card").offset().top
                         }, 900);
+
+                        $("#texas-fresh").click(function () {
+                            $("texasFresh").show("slow");
+                        });
+                        $("#social-code").click(function () {
+                            $("#socialCode").show("slow");
+                        });
+
+                        $("#personal-blog").click(function () {
+                            $("#personalBlog").show("slow");
+                        });
+
+
+                        $("#adlister").click(function () {
+                            $("#dadlister").show("slow");
+                        });
+
+
+                        $("#coffee").click(function () {
+                            $("#coffeeMenu").show("slow");
+                        });
+                        $("#weather-map").click(function () {
+                            $("#weatherMap").show("slow");
+                        });
+                        $("#calc").click(function () {
+                            $("#reactCalc").show("slow");
+                        });
+
                     });
 
 
+                    $(document).ready(
+                        function(){
+                            $("#texas-fresh").click(function () {
+                                $("#texasFresh").toggle();
+                            });
+                            $("#social-code").click(function () {
+                                $("#socialCode").toggle();
+                            });
+                            $("#personal-blog").click(function () {
+                                $("#personalBlog").toggle();
+                            });
+                            $("#adlister").click(function () {
+                                $("#dadlister").toggle();
+                            });
+                            $("#coffee").click(function () {
+                                $("#coffeeMenu").toggle();
+                            });
+                            $("#weather-map").click(function () {
+                                $("#weatherMap").toggle();
+                            });
+                            $("#calc").click(function () {
+                                $("#reactCalc").toggle();
+                            });
 
+                        });
                 });
+                // <li href="#">React Landing Page</li>
+                //     <li href="#">Full Stack Java Application</li>
+                //     <li href="#">Spring Boot Blog</li>
+                //     <li href="#">Java Adlister</li>
+                //     <li href="#">JavaScript Project</li>
+                //     <li href="#">JavaScript + JQuery</li>
+                //         <li href="#">React Patterns</li>
 
-
-
-                // BASIC CAROUSEL STRUCTURE
-
-                let i = 0;
-                let imageArray = [];
-                let time = 30000;
-
-                imageArray[0] = "Project-GIFS/SocialCode.gif";
-                imageArray[1] = "Project-GIFS/Springblog).gif";
-                imageArray[2] = "Project-GIFS/Adlister.gif";
-                imageArray[3] = 'Project-GIFS/coffee-project.gif';
-                imageArray[4] = 'Project-GIFS/weatherMap.gif';
-
-
-
-
-               function changingImages() {
-                    document.slide.src = imageArray[i];
-                    if(i < imageArray.length -1) {
-                        i++;
-                    } else {
-                        i = 0;
-                    }
-                    setTimeout('changingImages()', time);
-                }
-                changingImages();
-
-               //basic small projects
-
-                let j = 0;
-                let basicArray = [];
-                let timed = 600000;
-                basicArray[1] = "Project-GIFS/calc.gif";
-                function changeImages() {
-                    document.basicSlide.src = basicArray[i];
-                    if(i < basicArray.length -1) {
-                        j++;
-                    } else {
-                        j = 0;
-                    }
-                    setTimeout('changeImages()', timed);
-                }
-                changeImages();
 
 
             </script>
