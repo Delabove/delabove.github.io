@@ -20,9 +20,8 @@ main{
     padding: 0;
 }
 
-button.navbar-toggler {
-    color: white;
-}
+
+
 .header-block{
     position: relative;
 }
@@ -43,9 +42,9 @@ button.navbar-toggler {
     position: absolute;
     color: white;
     font-family: "Roboto Light";
-    font-size: 9px;
-    left: 115px;
-    top: 65px;
+    font-size: 6px;
+    left: 175px;
+    top: 72px;
 }
 
 #wel-img{
@@ -54,19 +53,24 @@ button.navbar-toggler {
 }
 
 .wel-container{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #intro{
-    z-index: 100;
+
     position: absolute;
     color: #898888;
     font-family: "Roboto Light";
-    font-size: 7px;
+    font-size: 6px;
     left: 194px;
-    top: 122px;
+    top: 108px;
+}
+
+.project-menu{
+    margin-top: 85px;
 }
 
 .menu ul {
@@ -79,7 +83,7 @@ button.navbar-toggler {
 .menu li {
     padding: 8px;
     margin-bottom: 7px;
-    background-color : #998462;
+    background-color : #F3C253;
     color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     font-size: 16px;
@@ -87,7 +91,7 @@ button.navbar-toggler {
 }
 
 .menu li:hover {
-    background-color: #78644b;
+    background-color: #4663B9;
 }
 
 #project-description{
@@ -109,9 +113,9 @@ button.navbar-toggler {
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
-/**/
-/**/
-/* The navigation menu links */
+
+
+/* navigation menu links */
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -123,7 +127,7 @@ button.navbar-toggler {
 /**/
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+    color: #4663B9;
 }
 /**/
 /* Position and style the close button (top right corner) */
@@ -182,9 +186,9 @@ button.navbar-toggler {
 
     #title{
 
-        font-size: 20px;
-        left: 190px;
-        top: 130px;
+        font-size: 13px;
+        left: 319px;
+        top: 161px;
     }
 
 
@@ -197,32 +201,7 @@ button.navbar-toggler {
     }
 
 
-    .about-section {
-        padding-left: 0px;
-        margin-top: 500px;
-        font-size: 16px;
-    }
 
-    #about-me-section {
-        padding-left: 0px;
-        margin-left: 0px;
-    }
-
-    .project-list-item {
-        width: 10%;
-    }
-/**/
-    .portfolio-list-item {
-        width: 10%;
-    }
-/**/
-    #contact {
-        margin-top: 200px;
-/**/
-    }
-    .contact-card{
-        width: 35rem;
-    }
 
 }
 
@@ -238,9 +217,9 @@ button.navbar-toggler {
 
     #title{
 
-        font-size: 25px;
-        left:293px;
-        top: 190px;
+        font-size: 24px;
+        left:501px;
+        top: 230px;
     }
 
     #wel-img{
@@ -261,46 +240,6 @@ button.navbar-toggler {
 
 
 
-
-
-    .about-section {
-        padding: 0;
-        margin-top: 800px;
-        font-size: 19px;
-
-    }
-    #about-me-section {
-        font-size: 15px;
-    }
-
-
-    #project{
-        margin-top: 180px;
-    }
-
-
-
-    .project-list-item {
-        width: 10%;
-
-    }
-
-    .portfolio-list-item {
-        width: 10%;
-    }
-
-    #contact {
-        margin-top: 200px;
-    }
-
-    .contact-card {
-        width: 44rem;
-
-    }
-
-    .form-group{
-        text-align: center;
-    }
 }
 
 @media screen and (min-width: 1200px) {
