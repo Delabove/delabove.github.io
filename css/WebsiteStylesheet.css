@@ -36,6 +36,15 @@ button.navbar-toggler {
     background-color: #313030;
     height: 180px;
 }
+#title{
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-family: "Roboto Light";
+    font-size: 10px;
+    left: 90px;
+    top: 120px;
+}
 
 #wel-img{
     height:200px;
@@ -159,7 +168,12 @@ button.navbar-toggler {
         width: 390px;
     }
 
+    #title{
 
+        font-size: 20px;
+        left: 190px;
+        top: 180px;
+    }
 
 
 
@@ -203,6 +217,12 @@ button.navbar-toggler {
         height: 500px;
     }
 
+    #title{
+
+        font-size: 25px;
+        left:290px;
+        top: 240px;
+    }
 
     #wel-img{
         height:540px;
@@ -352,7 +372,7 @@ button.navbar-toggler {
     #wel-img{
         height:600px;
         width: 600px;
-        margin-left: 250px;
+        margin-left: 300px;
     }
 
 }
