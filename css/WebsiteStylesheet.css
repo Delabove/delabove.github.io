@@ -28,14 +28,24 @@ button.navbar-toggler {
     float: left;
 
 }
+#header-img {
+    width: 190px;
+    height: 180px;
+}
 .header{
     background-color: #313030;
-    height: 200px;
+    height: 180px;
 }
 
 #wel-img{
-    height:150px;
-    width: 150px;
+    height:200px;
+    width: 200px;
+}
+
+.wel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu ul {
@@ -144,6 +154,15 @@ button.navbar-toggler {
     }
 
 
+    #wel-img{
+        height:390px;
+        width: 390px;
+    }
+
+
+
+
+
 
     .about-section {
         padding-left: 0px;
@@ -177,17 +196,17 @@ button.navbar-toggler {
 @media (min-width: 992px) {
 
     #header-img {
-        width: 580px;
-        height: 577px;
+        width: 500px;
+        height: 500px;
     }
     .header {
-        height: 580px;
+        height: 500px;
     }
 
 
     #wel-img{
-        height:450px;
-        width: 450px;
+        height:540px;
+        width: 540px;
     }
 
 
@@ -318,4 +337,22 @@ button.navbar-toggler {
         font-size: 30px;
         width: 133px;
     }
+}
+
+@media screen and (min-width: 1200px) {
+
+
+
+    .wel-container{
+        display: flex;
+        justify-content: normal;
+
+
+    }
+    #wel-img{
+        height:600px;
+        width: 600px;
+        margin-left: 250px;
+    }
+
 }
