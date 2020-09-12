@@ -71,6 +71,12 @@ main{
 
 .project-menu{
     margin-top: 85px;
+    font-family: "Open Sans";
+}
+
+.project-description{
+    font-family: "Open Sans";
+    margin-bottom: 15px;
 }
 
 .menu ul {
@@ -167,7 +173,15 @@ main{
 }
 
 
-
+.page-break{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 1260px;
+    height: 200px;
+    margin-top: 88px;
+    margin-bottom: 100px;
+}
 
 
 /*RESPONSIVE DESIGN*/
