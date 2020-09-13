@@ -7,7 +7,6 @@
 }
 
 html {
-
     margin: 0px;
     height: 100%;
 !important;
@@ -54,6 +53,7 @@ main {
 #sidebar {
     background-color: #108082;
     grid-area: sidebar;
+
 }
 
 #content1{
@@ -112,68 +112,46 @@ footer{
     height: 180px;
 }
 
-.header {
+
+.header-right {
     background-color: #313030;
     height: 180px;
+    background-image: url("../img/Welcome.png");
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: right;
+    /*background-position-y: top;*/
+}
+.wel-container{
+    /*float: right;*/
+    display: flex;
+    justify-content: flex-end;
+}
+#wel-img{
+    width: 110px;
+    height: 110px;
 }
 
 #title {
 
     position: absolute;
     color: white;
-    font-family: "Roboto Light";
-    font-size: 8px;
-    left: 175px;
-    top: 72px;
+    font-family: "Roboto";
+    font-size: 7px;
+    left: 161px;
+    top: 76px;
 }
 
-#wel-img {
-    height: 172px;
-    width: 210px;
-}
-
-.wel-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 #intro {
 
     position: absolute;
     color: #ffffff;
     font-family: "Roboto Light";
-    font-size: 6px;
+    font-size: 7px;
     left: 194px;
-    top: 108px;
+    top: 100px;
 }
-
-/*.contact-btn {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    padding: 0.7em 1.4em;*/
-/*    margin: 10px 0em 0.3em 0;*/
-/*    border-radius: 0.25em;*/
-/*    box-sizing: border-box;*/
-/*    text-decoration: none;*/
-/*    font-family: 'Roboto', sans-serif;*/
-/*    text-transform: uppercase;*/
-/*    font-size: 9px;*/
-/*    !*font-weight:400;*!*/
-/*    color: #ffffff;*/
-/*    background-color: #3369ff;*/
-/*    box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);*/
-/*    text-align: center;*/
-/*    position: relative;*/
-
-
-/*}*/
-
-/*.contact-btn:active {*/
-/*    top: 0.1em;*/
-/*}*/
 
 
 .project-tab {
@@ -181,13 +159,7 @@ footer{
     color: #ffffff;
 }
 
-/*.row {*/
-/*    display: flex;*/
-/*}*/
 
-/*.column {*/
-/*    flex: 50%;*/
-/*}*/
 .column1 ul {
 
 
@@ -195,10 +167,6 @@ footer{
     margin: 0;
     padding: 0;
 }
-
-/*.column1, .column2 {*/
-/*    flex: 50%;*/
-/*}*/
 
 
 .menu li {
@@ -298,15 +266,11 @@ footer{
         height: 350px;
     }
 
-    .header {
+    .header-right {
         height: 350px;
     }
 
 
-    #wel-img {
-        height: 390px;
-        width: 390px;
-    }
 
     #title {
 
@@ -334,7 +298,7 @@ footer{
         height: 540px;
     }
 
-    .header {
+    .header-right {
         height: 540px;
     }
 
@@ -345,10 +309,6 @@ footer{
         top: 230px;
     }
 
-    #wel-img {
-        height: 540px;
-        width: 540px;
-    }
 
 
     #intro {
@@ -381,11 +341,6 @@ footer{
     }
 
 
-    #wel-img {
-        height: 650px;
-        width: 650px;
-        margin-left: 100px;
-    }
 
 }
 
