@@ -5,283 +5,300 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/WebsiteStylesheet.css">
     <link rel="stylesheet" href="css/project-carousel.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Mr+Dafoe&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Mr+Dafoe&display=swap"
+          rel="stylesheet">
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
 
 
     <title>DeLayne LaBove</title>
 
 </head>
 <body>
-            <!--sliding side bar nav-->
-          <nav>
-                <div class="nav-wrapper">
-                    <div id="sideNavigation" class="sidenav">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a id="about-btn" href="#">About</a>
-                        <a id="project-btn" href="#">Projects</a>
-                        <a id="contact-btn" href="#">Contact Me</a>
-                    </div>
-                </div>
-            </nav>
-
-            <nav class="topnav">
-                <a href="#" onclick="openNav()">
-                    <svg width="30" height="30" id="icoOpen">
-                        <path d="M0,5 30,5" stroke="#b74533" stroke-width="5"/>
-                        <path d="M0,14 30,14" stroke="#b74533" stroke-width="5"/>
-                        <path d="M0,23 30,23" stroke="#b74533" stroke-width="5"/>
-                    </svg>
-                </a>
-
-            </nav>
-<!--TODO
-off canvas menu w/opacity-->
-
-<!--main body-->
-    <main>
-        <div class="row header-block">
-            <div class="col-6 header-art">
-                <div id="title"> <h1>Software Developer</h1>  </div>
-                <div>
-                    <img id="header-img" src="img/Main.png"/>
-                </div>
-            </div>
 
 
-            <div class="col-3 header">
-                <div class="wel-container">
-                    <img id="wel-img" style="opacity: 30%" src="img/Welcome.png" />
-                </div>
-                <p id="intro">My name is DeLayne LaBove. I am a <br> creative software developer with a <br> passion for design and UI/UX.
-                    <br> <button class="contact-btn">Contact Me</button>
-                </p>
-
-            </div>
-         </div>
-
-        <!--project grid....-->
-
-                    <div class="row project-menu">
-
-                        <div class="col-3 menu">
-                            <ul>
-                                <li href="#" id="texas-fresh">React Landing Page</li>
-                                <div class="col-9 project-tab">
-                                    <div class="project-container">
-                                        <div id="texasFresh" style="display:none; margin-bottom: 40px;">
-                                            <h1>Texas Fresh Blog Landing Page</h1>
-                                            <div><img style="width: 70%;" src="Project-GIFS/ReactLanding.gif"/></div>
-                                            <p class="project-description">Project Description</p>
-                                            <br>
-                                            <a style="color: #ffffff;" href="https://delabove.github.io/React-Blog-Layout/"> Welcome to Texas Fresh </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <li href="#" id="social-code">Full Stack Java Application</li>
-                                <div class="col-9 project-tab">
-                                    <div class="project-container" >
-                                        <div id="socialCode" style="display:none; margin-bottom: 40px;">
-                                            <h1>Capstone: Social Code</h1>
-                                            <div><img style="width: 70%;" src="Project-GIFS/SocialCode.gif"/></div>
-                                            <p class="project-description">Project Description</p>
-                                            <br>
-                                            <a  style="color: #818181;" href="https://socialcode.dev/"> Welcome to Social Code </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <li href="#" id="personal-blog">Spring Boot Blog</li>
-                                <div class="col-9 project-tab">
-                                    <div class="project-container">
-                                        <div id="personalBlog" style="display:none; margin-bottom: 40px;">
-                                            <h1>Spring Travel Blog</h1>
-                                            <div><img style="width: 70%" src="Project-GIFS/Spring.gif"/></div>
-                                            <p class="project-description">Project Description</p>
-
-                                            <br>
-                                            <a style="color: #818181;" href="https://delabove.com/"> Welcome to my personal travel blog! </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <li href="#" id="adlister">Java Adlister</li>
-                                <div class="col-9 project-tab">
-                                    <div class="project-container">
-                                        <div id="dadlister" style="display:none; margin-bottom: 40px;">
-                                            <h1>Dadlister</h1>
-                                            <div><img src="Project-GIFS/adlister.gif" style="width: 80%;"/></div>
-                                            <p>Project Description</p>
-                                            <br>
-                                            <a style="color: #818181;" href="https://github.com/The-Tech-Warriors/DadLister">View source code </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <li href="#" id="coffee">JavaScript Project</li>
-                                <div class="col-9 project-tab">
-                                    <div class="project-container">
-                                        <div id="coffeeMenu" style="display:none; margin-bottom: 40px;">
-                                            <h1>Coffee Project</h1>
-                                            <div><img style="width: 70%;" src="Project-GIFS/coffee.gif"/></div>
-                                            <p class="project-description">Project Description</p>
-                                            <br>
-                                            <a style="color: #818181;" href="https://github.com/Moriah-and-DeLayne/coffee-project">View source code </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <li href="#" id="weather-map">JavaScript + JQuery</li>
-                                <div class="col-9 project-tab">
-                                    <div class="project-container">
-                                        <div id="weatherMap" style="display:none; margin-bottom: 40px;">
-                                            <h1>Mapbox API</h1>
-                                            <div><img style="width: 60%;" src="Project-GIFS/weathermap.gif"/></div>
-                                            <p class="project-description">Project Description</p>
-
-                                            <br>
-                                            <a style="color: #818181;" href="https://github.com/Delabove/codeup-web-exercises/blob/master/js/mapbox_maps_api.js"> View source code </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <li href="#" id="calc">Intro to React</li>
-                                <div class="col-9 project-tab">
-                                    <div class="project-container">
-                                        <div id="reactCalc" style="display:none; margin-bottom: 40px;">
-                                            <h1>Intro to Reach</h1>
-                                            <div><img style="width: 70%;" src="Project-GIFS/reactPatterns.gif"/></div>
-                                            <p class="project-description">Project Description</p>
-                                            <br>
-                                            <a style="color: #818181;" href="https://github.com/Delabove/Calculator"> View source code </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </ul>
-                        </div>
-                    </div>
+<div class="container">
+    <nav>Navbar</nav>
+    <main>Main</main>
+    <div id="sidebar">Sidebar</div>
+    <div id="content1">Content1</div>
+    <div id="content2">Content2</div>
+    <footer>Footer</footer>
+</div>
 
 
-<!--<div class="page-break">-->
-<!--    <div>-->
-<!--        <img src="img/mags.png" style="width: 600px"/>-->
+<!--sliding side bar nav-->
+<!--<nav>-->
+<!--    <div class="nav-wrapper">-->
+<!--        <div id="sideNavigation" class="sidenav">-->
+<!--            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+<!--            <a id="about-btn" href="#">About</a>-->
+<!--            <a id="project-btn" href="#">Projects</a>-->
+<!--            <a id="contact-btn" href="#">Contact Me</a>-->
+<!--        </div>-->
 <!--    </div>-->
-<!--</div>-->
+<!--</nav>-->
+
+<!--<nav class="topnav">-->
+<!--    <a href="#" onclick="openNav()">-->
+<!--        <svg width="30" height="30" id="icoOpen">-->
+<!--            <path d="M0,5 30,5" stroke="#b74533" stroke-width="5"/>-->
+<!--            <path d="M0,14 30,14" stroke="#b74533" stroke-width="5"/>-->
+<!--            <path d="M0,23 30,23" stroke="#b74533" stroke-width="5"/>-->
+<!--        </svg>-->
+<!--    </a>-->
+
+<!--</nav>-->
+<!--&lt;!&ndash;TODO-->
+<!--off canvas menu w/opacity&ndash;&gt;-->
+
+<!--&lt;!&ndash;main body&ndash;&gt;-->
+<!--<main>-->
+<!--    <div class="row header-block">-->
+<!--        <div class="col-6 header-art">-->
+<!--            <div id="title"><h1>Software Developer</h1></div>-->
+<!--            <div>-->
+<!--                <img id="header-img" src="img/Main.png"/>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+<!--        <div class="col-3 header">-->
+<!--            <div class="wel-container">-->
+<!--                <img id="wel-img" style="opacity: 30%" src="img/Welcome.png"/>-->
+<!--            </div>-->
+<!--            <p id="intro">My name is DeLayne LaBove. I am a <br> creative software developer with a <br> passion for-->
+<!--                design and UI/UX.-->
+<!--                <br>-->
+<!--                <button class="contact-btn">Contact Me</button>-->
+<!--            </p>-->
+
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash;project grid....&ndash;&gt;-->
+
+<!--    <div class="row project-menu">-->
+<!--        <div class="column1 menu">-->
+<!--            <ul>-->
+<!--                <li href="#" id="texas-fresh">React Landing Page</li>-->
+<!--                <div class=" project-tab">-->
+<!--                    <div class="project-container">-->
+<!--                        <div id="texasFresh" style="display:none; margin-bottom: 40px;">-->
+<!--                            <h1>Texas Fresh Blog Landing Page</h1>-->
+<!--                            <div><img style="width: 70%;" src="Project-GIFS/ReactLanding.gif"/></div>-->
+<!--                            <p class="project-description">Project Description</p>-->
+<!--                            <br>-->
+<!--                            <a style="color: #ffffff;" href="https://delabove.github.io/React-Blog-Layout/"> Welcome to-->
+<!--                                Texas Fresh </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <li href="#" id="social-code">Full Stack Java Application</li>-->
+<!--                <div class="col-9 project-tab">-->
+<!--                    <div class="project-container">-->
+<!--                        <div id="socialCode" style="display:none; margin-bottom: 40px;">-->
+<!--                            <h1>Capstone: Social Code</h1>-->
+<!--                            <div><img style="width: 70%;" src="Project-GIFS/SocialCode.gif"/></div>-->
+<!--                            <p class="project-description">Project Description</p>-->
+<!--                            <br>-->
+<!--                            <a style="color: #818181;" href="https://socialcode.dev/"> Welcome to Social Code </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <li href="#" id="personal-blog">Spring Boot Blog</li>-->
+<!--                <div class="project-tab">-->
+<!--                    <div class="project-container">-->
+<!--                        <div id="personalBlog" style="display:none; margin-bottom: 40px;">-->
+<!--                            <h1>Spring Travel Blog</h1>-->
+<!--                            <div><img style="width: 70%" src="Project-GIFS/Spring.gif"/></div>-->
+<!--                            <p class="project-description">Project Description</p>-->
+
+<!--                            <br>-->
+<!--                            <a style="color: #818181;" href="https://delabove.com/"> Welcome to my personal travel-->
+<!--                                blog! </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <li href="#" id="adlister">Java Adlister</li>-->
+<!--                <div class="project-tab">-->
+<!--                    <div class="project-container">-->
+<!--                        <div id="dadlister" style="display:none; margin-bottom: 40px;">-->
+<!--                            <h1>Dadlister</h1>-->
+<!--                            <div><img src="Project-GIFS/adlister.gif" style="width: 80%;"/></div>-->
+<!--                            <p>Project Description</p>-->
+<!--                            <br>-->
+<!--                            <a style="color: #818181;" href="https://github.com/The-Tech-Warriors/DadLister">View source-->
+<!--                                code </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <li href="#" id="coffee">JavaScript Project</li>-->
+<!--                <div class="project-tab">-->
+<!--                    <div class="project-container">-->
+<!--                        <div id="coffeeMenu" style="display:none; margin-bottom: 40px;">-->
+<!--                            <h1>Coffee Project</h1>-->
+<!--                            <div><img style="width: 70%;" src="Project-GIFS/coffee.gif"/></div>-->
+<!--                            <p class="project-description">Project Description</p>-->
+<!--                            <br>-->
+<!--                            <a style="color: #818181;" href="https://github.com/Moriah-and-DeLayne/coffee-project">View-->
+<!--                                source code </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <li href="#" id="weather-map">JavaScript + JQuery</li>-->
+<!--                <div class="project-tab">-->
+<!--                    <div class="project-container">-->
+<!--                        <div id="weatherMap" style="display:none; margin-bottom: 40px;">-->
+<!--                            <h1>Mapbox API</h1>-->
+<!--                            <div><img style="width: 60%;" src="Project-GIFS/weathermap.gif"/></div>-->
+<!--                            <p class="project-description">Project Description</p>-->
+
+<!--                            <br>-->
+<!--                            <a style="color: #818181;"-->
+<!--                               href="https://github.com/Delabove/codeup-web-exercises/blob/master/js/mapbox_maps_api.js">-->
+<!--                                View source code </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <li href="#" id="calc">Intro to React</li>-->
+<!--                <div class=" project-tab">-->
+<!--                    <div class="project-container">-->
+<!--                        <div id="reactCalc" style="display:none; margin-bottom: 40px;">-->
+<!--                            <h1>Intro to Reach</h1>-->
+<!--                            <div><img style="width: 70%;" src="Project-GIFS/reactPatterns.gif"/></div>-->
+<!--                            <p class="project-description">Project Description</p>-->
+<!--                            <br>-->
+<!--                            <a style="color: #818181;" href="https://github.com/Delabove/Calculator"> View source-->
+<!--                                code </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="skills column2">-->
+<!--            -->
+<!--        </div>-->
+<!--    </div>-->
 
 
 
 
+<!--    &lt;!&ndash;TODO-->
+<!--    CREATE A RESUME BUTTON&ndash;&gt;-->
 
 
-        <!--TODO
-        CREATE A RESUME BUTTON-->
+<!--</main>-->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 
 
-
-    </main>
-
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-            <script type="text/javascript" src="js/materialize.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+    "use script";
 
 
-            <script>
-                "use script";
+    // sliding nav
+    function openNav() {
+        document.getElementById("sideNavigation").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("sideNavigation").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+
+    }
 
 
-                // sliding nav
-                function openNav() {
-                    document.getElementById("sideNavigation").style.width = "250px";
-                    document.getElementById("main").style.marginLeft = "250px";
-                }
+    $(document).ready(function () {
+        $("#about-btn").click(function () {
+            $('html, body').animate({
+                scrollTop: $(".about-section").offset().top
+            }, 900);
+        });
 
-                function closeNav() {
-                    document.getElementById("sideNavigation").style.width = "0";
-                    document.getElementById("main").style.marginLeft = "0";
+        $("#project-btn").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#portfolio").offset().top
+            }, 900);
+        });
+        $("#contact-btn").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#contact-card").offset().top
+            }, 900);
 
-                }
+            $("#texas-fresh").click(function () {
+                $("texasFresh").show("slow");
+            });
+            $("#social-code").click(function () {
+                $("#socialCode").show("slow");
+            });
 
-
-                $(document).ready(function (){
-                    $("#about-btn").click(function (){
-                        $('html, body').animate({
-                            scrollTop: $(".about-section").offset().top
-                        }, 900);
-                    });
-
-                    $("#project-btn").click(function (){
-                        $('html, body').animate({
-                            scrollTop: $("#portfolio").offset().top
-                        }, 900);
-                    });
-                    $("#contact-btn").click(function (){
-                        $('html, body').animate({
-                            scrollTop: $("#contact-card").offset().top
-                        }, 900);
-
-                        $("#texas-fresh").click(function () {
-                            $("texasFresh").show("slow");
-                        });
-                        $("#social-code").click(function () {
-                            $("#socialCode").show("slow");
-                        });
-
-                        $("#personal-blog").click(function () {
-                            $("#personalBlog").show("slow");
-                        });
+            $("#personal-blog").click(function () {
+                $("#personalBlog").show("slow");
+            });
 
 
-                        $("#adlister").click(function () {
-                            $("#dadlister").show("slow");
-                        });
+            $("#adlister").click(function () {
+                $("#dadlister").show("slow");
+            });
 
 
-                        $("#coffee").click(function () {
-                            $("#coffeeMenu").show("slow");
-                        });
-                        $("#weather-map").click(function () {
-                            $("#weatherMap").show("slow");
-                        });
-                        $("#calc").click(function () {
-                            $("#reactCalc").show("slow");
-                        });
+            $("#coffee").click(function () {
+                $("#coffeeMenu").show("slow");
+            });
+            $("#weather-map").click(function () {
+                $("#weatherMap").show("slow");
+            });
+            $("#calc").click(function () {
+                $("#reactCalc").show("slow");
+            });
 
-                    });
+        });
 
-                     $(document).ready(
-                        function(){
-                            $("#texas-fresh").click(function () {
-                                $("#texasFresh").toggle();
-                            });
-                            $("#social-code").click(function () {
-                                $("#socialCode").toggle();
-                            });
-                            $("#personal-blog").click(function () {
-                                $("#personalBlog").toggle();
-                            });
-                            $("#adlister").click(function () {
-                                $("#dadlister").toggle();
-                            });
-                            $("#coffee").click(function () {
-                                $("#coffeeMenu").toggle();
-                            });
-                            $("#weather-map").click(function () {
-                                $("#weatherMap").toggle();
-                            });
-                            $("#calc").click(function () {
-                                $("#reactCalc").toggle();
-                            });
-
-                        });
+        $(document).ready(
+            function () {
+                $("#texas-fresh").click(function () {
+                    $("#texasFresh").toggle();
+                });
+                $("#social-code").click(function () {
+                    $("#socialCode").toggle();
+                });
+                $("#personal-blog").click(function () {
+                    $("#personalBlog").toggle();
+                });
+                $("#adlister").click(function () {
+                    $("#dadlister").toggle();
+                });
+                $("#coffee").click(function () {
+                    $("#coffeeMenu").toggle();
+                });
+                $("#weather-map").click(function () {
+                    $("#weatherMap").toggle();
+                });
+                $("#calc").click(function () {
+                    $("#reactCalc").toggle();
                 });
 
+            });
+    });
 
 
-
-
-            </script>
+</script>
 
 
 </body>

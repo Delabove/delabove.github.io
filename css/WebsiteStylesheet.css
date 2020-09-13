@@ -1,13 +1,18 @@
 
-   *{ box-sizing: border-box}
+* {
+    box-sizing: border-box
+}
+
 html {
 
-    margin: 0px;!important;
-    padding: 0px;!important;
+    margin: 0px;
+!important;
+    padding: 0px;
+!important;
     overflow-x: hidden;
 }
 
-body{
+body {
     width: 100%;
     height: auto;
     margin: 0;
@@ -15,29 +20,85 @@ body{
     overflow-x: hidden;
 }
 
-main{
-    margin: 0 auto;
-    padding: 0;
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .2fr 1.5fr 1.2fr 1.2fr .8fr;
+    grid-template-areas:
+    "nav nav nav nav"
+    "main main main main"
+    "sidebar content1 content1 content1"
+    "sidebar content1 content1 content1"
+    "content2 content2 content2 content2"
+    "footer footer footer footer"
+
+}
+
+nav {
+    background-color: #1ef8ff;
+    grid-area: nav;
+}
+main {
+    background-color: #1ba8ad;
+    grid-area: main;
+}
+
+#sidebar {
+    background-color: #108082;
+    grid-area: sidebar;
+}
+
+#content1{
+    background-color: #0d6549;
+    grid-area: content1;
+}
+
+
+#content2{
+    background-color: #0d6569;
+    grid-area: content2;
 }
 
 
 
-.header-block{
+footer{
+    background-color: #0b3c45;
+    grid-area: footer;
+}
+
+
+
+
+
+
+
+
+
+
+/* */
+
+.header-block {
     position: relative;
 }
-.header-art{
+
+.header-art {
     float: left;
 
 }
+
 #header-img {
     width: 183px;
     height: 180px;
 }
-.header{
+
+.header {
     background-color: #313030;
     height: 180px;
 }
-#title{
+
+#title {
 
     position: absolute;
     color: white;
@@ -47,19 +108,19 @@ main{
     top: 72px;
 }
 
-#wel-img{
-    height:172px;
+#wel-img {
+    height: 172px;
     width: 210px;
 }
 
-.wel-container{
+.wel-container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#intro{
+#intro {
 
     position: absolute;
     color: #ffffff;
@@ -70,55 +131,64 @@ main{
 }
 
 .contact-btn {
-   display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding:0.7em 1.4em;
+    padding: 0.7em 1.4em;
     margin: 10px 0em 0.3em 0;
-    border-radius:0.25em;
+    border-radius: 0.25em;
     box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    text-transform:uppercase;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
     font-size: 9px;
     /*font-weight:400;*/
-    color:#ffffff;
-    background-color:#3369ff;
-    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
-    text-align:center;
-    position:relative;
+    color: #ffffff;
+    background-color: #3369ff;
+    box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+    text-align: center;
+    position: relative;
 
 
 }
-   .contact-btn:active{
-       top:0.1em;
-   }
 
-.project-menu{
-    margin-top: 85px;
-    font-family: "Open Sans";
-    color: #b74533;
+.contact-btn:active {
+    top: 0.1em;
 }
 
-.project-tab{
+
+.project-tab {
     font-family: "Open Sans";
     color: #ffffff;
 }
 
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
+.row {
+    display: flex;
 }
+
+/*.column {*/
+/*    flex: 50%;*/
+/*}*/
+.column1 ul {
+
+
+    list-style-type: none;
+    margin: 140px 0 0 0;
+    padding: 0;
+}
+
+.column1, .column2 {
+    flex: 50%;
+}
+
 
 .menu li {
 
     padding: 8px;
-    /*margin-bottom: 7px;*/
-    background-color : #F3C253;
+    margin-bottom: 7px;
+    background-color: #F3C253;
     color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.74);
     font-size: 16px;
     width: 200px;
 }
@@ -127,13 +197,6 @@ main{
     background-color: #4663B9;
 }
 
-/**/
-
-
-.project-container{
-    text-align: center;
-
-}
 
 /* The side navigation menu */
 .sidenav {
@@ -159,12 +222,14 @@ main{
     display: block;
     transition: 0.3s
 }
-/**/
+
+
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
+.sidenav a:hover, .offcanvas a:focus {
     color: #4663B9;
 }
-/**/
+
+
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
@@ -173,21 +238,23 @@ main{
     font-size: 36px;
     margin-left: 50px;
 }
-/**/
+
+
 /* Style the links inside the navigation bar */
 .topnav a {
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px ;
+    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
-/**/
+
+
 #icoOpen {
     margin-top: 20px;
 }
-/**/
-/**/
+
+
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: gray;
@@ -195,20 +262,14 @@ main{
 }
 
 
-.page-break{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 1260px;
-    height: 200px;
-    margin-top: 88px;
-    margin-bottom: 100px;
+/*}*/
+
+#skills-img {
+    width: 700px;
+    height: 700px;
 }
 
-
 /*RESPONSIVE DESIGN*/
-
-
 
 
 /*!/ Medium devices (tablets, 768px and up)*/
@@ -217,17 +278,18 @@ main{
         width: 350px;
         height: 350px;
     }
+
     .header {
         height: 350px;
     }
 
 
-    #wel-img{
-        height:390px;
+    #wel-img {
+        height: 390px;
         width: 390px;
     }
 
-    #title{
+    #title {
 
         font-size: 13px;
         left: 319px;
@@ -235,15 +297,13 @@ main{
     }
 
 
-    #intro{
+    #intro {
 
         font-family: "Roboto Light";
         font-size: 15px;
         left: 370px;
         top: 234px;
     }
-
-
 
 
 }
@@ -254,33 +314,31 @@ main{
         width: 540px;
         height: 540px;
     }
+
     .header {
         height: 540px;
     }
 
-    #title{
+    #title {
 
         font-size: 24px;
-        left:501px;
+        left: 501px;
         top: 230px;
     }
 
-    #wel-img{
-        height:540px;
+    #wel-img {
+        height: 540px;
         width: 540px;
     }
 
 
-    #intro{
+    #intro {
 
         font-family: "Roboto Light";
         font-size: 16px;
         left: 581px;
         top: 340px;
     }
-
-
-
 
 
 }
@@ -304,16 +362,15 @@ main{
     }
 
 
-    #wel-img{
-        height:650px;
+    #wel-img {
+        height: 650px;
         width: 650px;
         margin-left: 100px;
     }
 
 }
 
-    @media screen and (min-width: 2200px) {
-
+@media screen and (min-width: 2200px) {
 
 
 }
