@@ -20,175 +20,199 @@
 
 
 <div class="container">
-    <nav>Navbar</nav>
-    <main>Main</main>
-    <div id="sidebar">Sidebar</div>
+    <nav>
+        <nav>
+            <div class="nav-wrapper">
+                <div id="sideNavigation" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a id="about-btn" href="#">About</a>
+                    <a id="project-btn" href="#">Projects</a>
+                    <a id="contact-btn" href="#">Contact Me</a>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="topnav">
+            <a href="#" onclick="openNav()">
+                <svg width="30" height="30" id="icoOpen">
+                    <path d="M0,5 30,5" stroke="#b74533" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#b74533" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#b74533" stroke-width="5"/>
+                </svg>
+            </a>
+
+        </nav>
+    </nav>
+
+
+
+    <main>
+        <div class="row header-block">
+            <div class="col-6 header-art">
+                <div id="title"><h1>Software Developer</h1></div>
+                <div>
+                    <img id="header-img" src="img/Main.png"/>
+                </div>
+            </div>
+
+
+            <div class="col-3 header">
+                <div class="wel-container">
+<!--                    <img id="wel-img" style="opacity: 30%" src="img/Welcome.png"/>-->
+                </div>
+                <p id="intro">My name is DeLayne LaBove. I am a <br> creative software developer with a <br> passion for
+                    design and UI/UX.
+                    <br>
+<!--                    <button class="contact-btn">Contact Me</button>-->
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <div id="sidebar">
+        <div class="row project-menu">
+            <div class="column1 menu">
+                <ul>
+                    <li href="#" id="texas-fresh">React Landing Page</li>
+                    <div class=" project-tab">
+                        <div class="project-container">
+                            <div id="texasFresh" style="display:none; margin-bottom: 40px;">
+                                <h1>Texas Fresh Blog Landing Page</h1>
+                                <div><img style="width: 70%;" src="Project-GIFS/ReactLanding.gif"/></div>
+                                <p class="project-description">Project Description</p>
+                                <br>
+                                <a style="color: #ffffff;" href="https://delabove.github.io/React-Blog-Layout/"> Welcome to
+                                    Texas Fresh </a>
+                            </div>
+                        </div>
+                    </div>
+                    <li href="#" id="social-code">Full Stack Java Application</li>
+                    <div class="col-9 project-tab">
+                        <div class="project-container">
+                            <div id="socialCode" style="display:none; margin-bottom: 40px;">
+                                <h1>Capstone: Social Code</h1>
+                                <div><img style="width: 70%;" src="Project-GIFS/SocialCode.gif"/></div>
+                                <p class="project-description">Project Description</p>
+                                <br>
+                                <a style="color: #818181;" href="https://socialcode.dev/"> Welcome to Social Code </a>
+                            </div>
+                        </div>
+                    </div>
+                    <li href="#" id="personal-blog">Spring Boot Blog</li>
+                    <div class="project-tab">
+                        <div class="project-container">
+                            <div id="personalBlog" style="display:none; margin-bottom: 40px;">
+                                <h1>Spring Travel Blog</h1>
+                                <div><img style="width: 70%" src="Project-GIFS/Spring.gif"/></div>
+                                <p class="project-description">Project Description</p>
+
+                                <br>
+                                <a style="color: #818181;" href="https://delabove.com/"> Welcome to my personal travel
+                                    blog! </a>
+                            </div>
+                        </div>
+                    </div>
+                    <li href="#" id="adlister">Java Adlister</li>
+                    <div class="project-tab">
+                        <div class="project-container">
+                            <div id="dadlister" style="display:none; margin-bottom: 40px;">
+                                <h1>Dadlister</h1>
+                                <div><img src="Project-GIFS/adlister.gif" style="width: 80%;"/></div>
+                                <p>Project Description</p>
+                                <br>
+                                <a style="color: #818181;" href="https://github.com/The-Tech-Warriors/DadLister">View source
+                                    code </a>
+                            </div>
+                        </div>
+                    </div>
+                    <li href="#" id="coffee">JavaScript Project</li>
+                    <div class="project-tab">
+                        <div class="project-container">
+                            <div id="coffeeMenu" style="display:none; margin-bottom: 40px;">
+                                <h1>Coffee Project</h1>
+                                <div><img style="width: 70%;" src="Project-GIFS/coffee.gif"/></div>
+                                <p class="project-description">Project Description</p>
+                                <br>
+                                <a style="color: #818181;" href="https://github.com/Moriah-and-DeLayne/coffee-project">View
+                                    source code </a>
+                            </div>
+                        </div>
+                    </div>
+                    <li href="#" id="weather-map">JavaScript + JQuery</li>
+                    <div class="project-tab">
+                        <div class="project-container">
+                            <div id="weatherMap" style="display:none; margin-bottom: 40px;">
+                                <h1>Mapbox API</h1>
+                                <div><img style="width: 60%;" src="Project-GIFS/weathermap.gif"/></div>
+                                <p class="project-description">Project Description</p>
+
+                                <br>
+                                <a style="color: #818181;"
+                                   href="https://github.com/Delabove/codeup-web-exercises/blob/master/js/mapbox_maps_api.js">
+                                    View source code </a>
+                            </div>
+                        </div>
+                    </div>
+                    <li href="#" id="calc">Intro to React</li>
+                    <div class=" project-tab">
+                        <div class="project-container">
+                            <div id="reactCalc" style="display:none; margin-bottom: 40px;">
+                                <h1>Intro to Reach</h1>
+                                <div><img style="width: 70%;" src="Project-GIFS/reactPatterns.gif"/></div>
+                                <p class="project-description">Project Description</p>
+                                <br>
+                                <a style="color: #818181;" href="https://github.com/Delabove/Calculator"> View source
+                                    code </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div id="content1">Content1</div>
     <div id="content2">Content2</div>
     <footer>Footer</footer>
 </div>
 
 
-<!--sliding side bar nav-->
-<!--<nav>-->
-<!--    <div class="nav-wrapper">-->
-<!--        <div id="sideNavigation" class="sidenav">-->
-<!--            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-<!--            <a id="about-btn" href="#">About</a>-->
-<!--            <a id="project-btn" href="#">Projects</a>-->
-<!--            <a id="contact-btn" href="#">Contact Me</a>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</nav>-->
-
-<!--<nav class="topnav">-->
-<!--    <a href="#" onclick="openNav()">-->
-<!--        <svg width="30" height="30" id="icoOpen">-->
-<!--            <path d="M0,5 30,5" stroke="#b74533" stroke-width="5"/>-->
-<!--            <path d="M0,14 30,14" stroke="#b74533" stroke-width="5"/>-->
-<!--            <path d="M0,23 30,23" stroke="#b74533" stroke-width="5"/>-->
-<!--        </svg>-->
-<!--    </a>-->
-
-<!--</nav>-->
-<!--&lt;!&ndash;TODO-->
-<!--off canvas menu w/opacity&ndash;&gt;-->
-
-<!--&lt;!&ndash;main body&ndash;&gt;-->
-<!--<main>-->
-<!--    <div class="row header-block">-->
-<!--        <div class="col-6 header-art">-->
-<!--            <div id="title"><h1>Software Developer</h1></div>-->
-<!--            <div>-->
-<!--                <img id="header-img" src="img/Main.png"/>-->
-<!--            </div>-->
-<!--        </div>-->
 
 
-<!--        <div class="col-3 header">-->
-<!--            <div class="wel-container">-->
-<!--                <img id="wel-img" style="opacity: 30%" src="img/Welcome.png"/>-->
-<!--            </div>-->
-<!--            <p id="intro">My name is DeLayne LaBove. I am a <br> creative software developer with a <br> passion for-->
-<!--                design and UI/UX.-->
-<!--                <br>-->
-<!--                <button class="contact-btn">Contact Me</button>-->
-<!--            </p>-->
+<!--TODO
+off canvas menu w/opacity-->
 
-<!--        </div>-->
-<!--    </div>-->
+<!--main body-->
 
-<!--    &lt;!&ndash;project grid....&ndash;&gt;-->
 
-<!--    <div class="row project-menu">-->
-<!--        <div class="column1 menu">-->
-<!--            <ul>-->
-<!--                <li href="#" id="texas-fresh">React Landing Page</li>-->
-<!--                <div class=" project-tab">-->
-<!--                    <div class="project-container">-->
-<!--                        <div id="texasFresh" style="display:none; margin-bottom: 40px;">-->
-<!--                            <h1>Texas Fresh Blog Landing Page</h1>-->
-<!--                            <div><img style="width: 70%;" src="Project-GIFS/ReactLanding.gif"/></div>-->
-<!--                            <p class="project-description">Project Description</p>-->
-<!--                            <br>-->
-<!--                            <a style="color: #ffffff;" href="https://delabove.github.io/React-Blog-Layout/"> Welcome to-->
-<!--                                Texas Fresh </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <li href="#" id="social-code">Full Stack Java Application</li>-->
-<!--                <div class="col-9 project-tab">-->
-<!--                    <div class="project-container">-->
-<!--                        <div id="socialCode" style="display:none; margin-bottom: 40px;">-->
-<!--                            <h1>Capstone: Social Code</h1>-->
-<!--                            <div><img style="width: 70%;" src="Project-GIFS/SocialCode.gif"/></div>-->
-<!--                            <p class="project-description">Project Description</p>-->
-<!--                            <br>-->
-<!--                            <a style="color: #818181;" href="https://socialcode.dev/"> Welcome to Social Code </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <li href="#" id="personal-blog">Spring Boot Blog</li>-->
-<!--                <div class="project-tab">-->
-<!--                    <div class="project-container">-->
-<!--                        <div id="personalBlog" style="display:none; margin-bottom: 40px;">-->
-<!--                            <h1>Spring Travel Blog</h1>-->
-<!--                            <div><img style="width: 70%" src="Project-GIFS/Spring.gif"/></div>-->
-<!--                            <p class="project-description">Project Description</p>-->
 
-<!--                            <br>-->
-<!--                            <a style="color: #818181;" href="https://delabove.com/"> Welcome to my personal travel-->
-<!--                                blog! </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <li href="#" id="adlister">Java Adlister</li>-->
-<!--                <div class="project-tab">-->
-<!--                    <div class="project-container">-->
-<!--                        <div id="dadlister" style="display:none; margin-bottom: 40px;">-->
-<!--                            <h1>Dadlister</h1>-->
-<!--                            <div><img src="Project-GIFS/adlister.gif" style="width: 80%;"/></div>-->
-<!--                            <p>Project Description</p>-->
-<!--                            <br>-->
-<!--                            <a style="color: #818181;" href="https://github.com/The-Tech-Warriors/DadLister">View source-->
-<!--                                code </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <li href="#" id="coffee">JavaScript Project</li>-->
-<!--                <div class="project-tab">-->
-<!--                    <div class="project-container">-->
-<!--                        <div id="coffeeMenu" style="display:none; margin-bottom: 40px;">-->
-<!--                            <h1>Coffee Project</h1>-->
-<!--                            <div><img style="width: 70%;" src="Project-GIFS/coffee.gif"/></div>-->
-<!--                            <p class="project-description">Project Description</p>-->
-<!--                            <br>-->
-<!--                            <a style="color: #818181;" href="https://github.com/Moriah-and-DeLayne/coffee-project">View-->
-<!--                                source code </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <li href="#" id="weather-map">JavaScript + JQuery</li>-->
-<!--                <div class="project-tab">-->
-<!--                    <div class="project-container">-->
-<!--                        <div id="weatherMap" style="display:none; margin-bottom: 40px;">-->
-<!--                            <h1>Mapbox API</h1>-->
-<!--                            <div><img style="width: 60%;" src="Project-GIFS/weathermap.gif"/></div>-->
-<!--                            <p class="project-description">Project Description</p>-->
+    <!--project grid....-->
 
-<!--                            <br>-->
-<!--                            <a style="color: #818181;"-->
-<!--                               href="https://github.com/Delabove/codeup-web-exercises/blob/master/js/mapbox_maps_api.js">-->
-<!--                                View source code </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <li href="#" id="calc">Intro to React</li>-->
-<!--                <div class=" project-tab">-->
-<!--                    <div class="project-container">-->
-<!--                        <div id="reactCalc" style="display:none; margin-bottom: 40px;">-->
-<!--                            <h1>Intro to Reach</h1>-->
-<!--                            <div><img style="width: 70%;" src="Project-GIFS/reactPatterns.gif"/></div>-->
-<!--                            <p class="project-description">Project Description</p>-->
-<!--                            <br>-->
-<!--                            <a style="color: #818181;" href="https://github.com/Delabove/Calculator"> View source-->
-<!--                                code </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
 
-<!--            </ul>-->
-<!--        </div>-->
-<!--        <div class="skills column2">-->
-<!--            -->
-<!--        </div>-->
-<!--    </div>-->
+        <div class="skills column2">
+
+        </div>
 
 
 
 
-<!--    &lt;!&ndash;TODO-->
-<!--    CREATE A RESUME BUTTON&ndash;&gt;-->
+
+    <!--TODO
+    CREATE A RESUME BUTTON-->
 
 
 <!--</main>-->
