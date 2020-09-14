@@ -72,10 +72,10 @@
                         <div class="project-container">
                             <div id="texasFresh" style="display:none; margin-bottom: 40px;">
                                 <h1>Texas Fresh Blog Landing Page</h1>
-                                <div><img style="width: 70%;" src="Project-GIFS/ReactLanding.gif"/></div>
+                                <div><img class="project-gif"  src="Project-GIFS/ReactLanding.gif"/></div>
                                 <p class="project-description">Project Description</p>
                                 <br>
-                                <a style="color: #ffffff;" href="https://delabove.github.io/React-Blog-Layout/"> Welcome to
+                                <a href="https://delabove.github.io/React-Blog-Layout/"> Welcome to
                                     Texas Fresh </a>
                             </div>
                         </div>
@@ -85,10 +85,10 @@
                         <div class="project-container">
                             <div id="socialCode" style="display:none; margin-bottom: 40px;">
                                 <h1>Capstone: Social Code</h1>
-                                <div><img style="width: 70%;" src="Project-GIFS/SocialCode.gif"/></div>
+                                <div><img class="project-gif"  src="Project-GIFS/SocialCode.gif"/></div>
                                 <p class="project-description">Project Description</p>
                                 <br>
-                                <a style="color: #818181;" href="https://socialcode.dev/"> Welcome to Social Code </a>
+                                <a href="https://socialcode.dev/"> Welcome to Social Code </a>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                         <div class="project-container">
                             <div id="personalBlog" style="display:none; margin-bottom: 40px;">
                                 <h1>Spring Travel Blog</h1>
-                                <div><img style="width: 70%" src="Project-GIFS/Spring.gif"/></div>
+                                <div><img class="project-gif"  src="Project-GIFS/Spring.gif"/></div>
                                 <p class="project-description">Project Description</p>
 
                                 <br>
@@ -111,11 +111,10 @@
                         <div class="project-container">
                             <div id="dadlister" style="display:none; margin-bottom: 40px;">
                                 <h1>Dadlister</h1>
-                                <div><img src="Project-GIFS/adlister.gif" style="width: 80%;"/></div>
+                                <div><img class="project-gif"  src="Project-GIFS/adlister.gif" style="width: 80%;"/></div>
                                 <p>Project Description</p>
                                 <br>
-                                <a style="color: #818181;" href="https://github.com/The-Tech-Warriors/DadLister">View source
-                                    code </a>
+                                <a href="https://github.com/The-Tech-Warriors/DadLister">View source code </a>
                             </div>
                         </div>
                     </div>
@@ -124,11 +123,10 @@
                         <div class="project-container">
                             <div id="coffeeMenu" style="display:none; margin-bottom: 40px;">
                                 <h1>Coffee Project</h1>
-                                <div><img style="width: 70%;" src="Project-GIFS/coffee.gif"/></div>
+                                <div><img class="project-gif"  src="Project-GIFS/coffee.gif"/></div>
                                 <p class="project-description">Project Description</p>
                                 <br>
-                                <a style="color: #818181;" href="https://github.com/Moriah-and-DeLayne/coffee-project">View
-                                    source code </a>
+                                <a  href="https://github.com/Moriah-and-DeLayne/coffee-project">View source code </a>
                             </div>
                         </div>
                     </div>
@@ -137,11 +135,11 @@
                         <div class="project-container">
                             <div id="weatherMap" style="display:none; margin-bottom: 40px;">
                                 <h1>Mapbox API</h1>
-                                <div><img style="width: 60%;" src="Project-GIFS/weathermap.gif"/></div>
+                                <div><img class="project-gif"  src="Project-GIFS/weathermap.gif"/></div>
                                 <p class="project-description">Project Description</p>
 
                                 <br>
-                                <a style="color: #818181;"
+                                <a
                                    href="https://github.com/Delabove/codeup-web-exercises/blob/master/js/mapbox_maps_api.js">
                                     View source code </a>
                             </div>
@@ -152,11 +150,10 @@
                         <div class="project-container">
                             <div id="reactCalc" style="display:none; margin-bottom: 40px;">
                                 <h1>Intro to Reach</h1>
-                                <div><img style="width: 70%;" src="Project-GIFS/reactPatterns.gif"/></div>
+                                <div><img class="project-gif"  src="Project-GIFS/reactPatterns.gif"/></div>
                                 <p class="project-description">Project Description</p>
                                 <br>
-                                <a style="color: #818181;" href="https://github.com/Delabove/Calculator"> View source
-                                    code </a>
+                                <a href="https://github.com/Delabove/Calculator"> View source code </a>
                             </div>
                         </div>
                     </div>
@@ -225,6 +222,11 @@
             $("#texas-fresh").click(function () {
                 $("texasFresh").show("slow");
             });
+
+            $("#texas-fresh").click(function () {
+                $("#content1").hidden();
+            });
+
             $("#social-code").click(function () {
                 $("#socialCode").show("slow");
             });
@@ -251,11 +253,14 @@
 
         });
 
+
         $(document).ready(
             function () {
                 $("#texas-fresh").click(function () {
                     $("#texasFresh").toggle();
                 });
+
+
                 $("#social-code").click(function () {
                     $("#socialCode").toggle();
                 });

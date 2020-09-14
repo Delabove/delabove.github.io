@@ -136,22 +136,15 @@ footer {
 }
 
 
-.project-tab {
-
-    position: relative;
-    font-family: "Open Sans";
-    color: #ffffff;
-}
-
-
-.column1 ul {
+.project-tab a {
 
     text-align: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    font-family: "Open Sans";
+    color: #5e5c5c;
 }
-
+.project-gif{
+    width: 35%;
+}
 
 .menu li {
 
@@ -166,6 +159,7 @@ footer {
 
 .menu li:hover {
     background-color: #4663B9;
+    color: white;
 }
 
 
@@ -291,6 +285,17 @@ footer {
     }
 
 
+    .project-tab {
+
+        margin-left: 161px;
+
+    }
+    .project-gif{
+
+        width: 40%;
+    }
+
+
 }
 
 @media (min-width: 992px) {
@@ -322,6 +327,16 @@ footer {
         top: 300px;
     }
 
+    .project-tab {
+
+        margin-left: 110px;
+
+    }
+    .project-gif{
+
+        width: 70%;
+    }
+
 
 }
 
@@ -341,6 +356,16 @@ footer {
         font-size: 31px;
         left: 765px;
         top: 296px;
+    }
+
+    .project-tab {
+
+        margin-left: 271px;
+
+    }
+    .project-gif{
+
+        width: 100%;
     }
 
 
