@@ -32,9 +32,10 @@ body {
     grid-template-areas:
     "nav nav nav nav"
     "main main main main"
+    "content2 content2 content2 content2"
     "sidebar sidebar sidebar sidebar"
     "content1 content1 content1 content1"
-    "content2 content2 content2 content2"
+
     "footer footer footer footer";
     grid-gap: 3rem;
 
@@ -64,12 +65,21 @@ main {
 }
 
 
-#content2 {
 
-    grid-area: content2;
 
+.ml12 {
+    font-family: "Roboto Light";
+    font-weight: 200;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
 }
 
+#content2 .ml12 .letter {
+    display: inline-grid;
+    grid-area: content2;
+    line-height: 1em;
+}
 
 footer {
 
@@ -267,7 +277,9 @@ footer {
     height: 480px;
 }
 
-/*RESPONSIVE Grid*/
+
+
+/*/////////////////////////////////// !*RESPONSIVE Grid*! /////////////////////////*/
 
 @media only screen and (max-width: 550px) {
 
