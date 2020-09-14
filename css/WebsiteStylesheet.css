@@ -44,6 +44,7 @@ body {
 nav {
     /*background-color: #1ef8ff;*/
     grid-area: nav;
+    text-align: center;
 }
 
 main {
@@ -358,6 +359,10 @@ footer {
         top: 296px;
     }
 
+    #skills-img{
+        width: 900px;
+        height: 300px;
+    }
     .project-tab {
 
         margin-left: 271px;

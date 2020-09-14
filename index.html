@@ -67,7 +67,7 @@
         <div class="row project-menu">
             <div class="column1 menu">
                 <ul>
-                    <li href="#" id="texas-fresh">React Landing Page</li>
+                    <li class="project-btn" href="#" id="texas-fresh">React Landing Page</li>
                     <div class=" project-tab">
                         <div class="project-container">
                             <div id="texasFresh" style="display:none; margin-bottom: 40px;">
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                     </div>
-                    <li href="#" id="social-code">Full Stack Java Application</li>
+                    <li class="project-btn" href="#" id="social-code">Full Stack Java Application</li>
                     <div class="col-9 project-tab">
                         <div class="project-container">
                             <div id="socialCode" style="display:none; margin-bottom: 40px;">
@@ -92,7 +92,7 @@
                             </div>
                         </div>
                     </div>
-                    <li href="#" id="personal-blog">Spring Boot Blog</li>
+                    <li class="project-btn" href="#" id="personal-blog">Spring Boot Blog</li>
                     <div class="project-tab">
                         <div class="project-container">
                             <div id="personalBlog" style="display:none; margin-bottom: 40px;">
@@ -106,7 +106,7 @@
                             </div>
                         </div>
                     </div>
-                    <li href="#" id="adlister">Java Adlister</li>
+                    <li class="project-btn" href="#" id="adlister">Java Adlister</li>
                     <div class="project-tab">
                         <div class="project-container">
                             <div id="dadlister" style="display:none; margin-bottom: 40px;">
@@ -118,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <li href="#" id="coffee">JavaScript Project</li>
+                    <li class="project-btn" href="#" id="coffee">JavaScript Project</li>
                     <div class="project-tab">
                         <div class="project-container">
                             <div id="coffeeMenu" style="display:none; margin-bottom: 40px;">
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                     </div>
-                    <li href="#" id="weather-map">JavaScript + JQuery</li>
+                    <li class="project-btn" href="#" id="weather-map">JavaScript + JQuery</li>
                     <div class="project-tab">
                         <div class="project-container">
                             <div id="weatherMap" style="display:none; margin-bottom: 40px;">
@@ -145,7 +145,7 @@
                             </div>
                         </div>
                     </div>
-                    <li href="#" id="calc">Intro to React</li>
+                    <li class="project-btn" href="#" id="calc">Intro to React</li>
                     <div class=" project-tab">
                         <div class="project-container">
                             <div id="reactCalc" style="display:none; margin-bottom: 40px;">
@@ -166,9 +166,10 @@
     <div id="content1">
         <img id="skills-img" src="img/skills.png" height="780" width="2050"/>
     </div>
-    <div id="content2">
-        <img id="contact-img" src="img/Contact.png" height="1428" width="2000"/></div>
-    <footer>Footer</footer>
+<!--    <div id="content2">-->
+<!--        <img id="contact-img" src="img/Contact.png" height="1428" width="2000"/>-->
+<!--    </div>-->
+    <footer style="background-color: #111111">Footer</footer>
 </div>
 
 
@@ -223,9 +224,6 @@
                 $("texasFresh").show("slow");
             });
 
-            $("#texas-fresh").click(function () {
-                $("#content1").hidden();
-            });
 
             $("#social-code").click(function () {
                 $("#socialCode").show("slow");
@@ -258,26 +256,33 @@
             function () {
                 $("#texas-fresh").click(function () {
                     $("#texasFresh").toggle();
+                    $("#content1").toggle();
                 });
 
 
                 $("#social-code").click(function () {
                     $("#socialCode").toggle();
+                    $("#content1").toggle();
                 });
                 $("#personal-blog").click(function () {
                     $("#personalBlog").toggle();
+                    $("#content1").toggle();
                 });
                 $("#adlister").click(function () {
                     $("#dadlister").toggle();
+                    $("#content1").toggle();
                 });
                 $("#coffee").click(function () {
                     $("#coffeeMenu").toggle();
+                    $("#content1").toggle();
                 });
                 $("#weather-map").click(function () {
                     $("#weatherMap").toggle();
+                    $("#content1").toggle();
                 });
                 $("#calc").click(function () {
                     $("#reactCalc").toggle();
+                    $("#content1").toggle();
                 });
 
             });
