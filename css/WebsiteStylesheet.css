@@ -23,7 +23,6 @@ body {
     overflow-x: hidden;
 }
 
-
 .container {
 
     display: grid;
@@ -33,8 +32,8 @@ body {
     grid-template-areas:
     "nav nav nav nav"
     "main main main main"
-    "sidebar sidebar content1 content1"
-    "sidebar sidebar content1 content1"
+    "sidebar sidebar sidebar sidebar"
+    "content1 content1 content1 content1"
     "content2 content2 content2 content2"
     "footer footer footer footer";
     grid-gap: 3rem;
@@ -48,30 +47,27 @@ nav {
 }
 
 main {
-    /*background-color: #1ba8ad;*/
+
     grid-area: main;
+
 }
 
 #sidebar {
-    /*background-color: #F3C253;*/
     grid-area: sidebar;
-    text-align: center;
-
 
 }
 
 #content1 {
-    /*background-color: #4663B9;*/
+
     grid-area: content1;
-    text-align: center;
 
 }
 
 
 #content2 {
-    /*background-color: #0d6569;*/
+
     grid-area: content2;
-    text-align: center;
+
 }
 
 
@@ -79,32 +75,39 @@ footer {
 
     grid-area: footer;
     display: grid;
-    /*height: 100vh;*/
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: max-content;
     grid-template-areas:
-   ".. .. .. ..  box1 box2 box3 box4 .. .. .. ..";
-    /*grid-gap: 3rem;*/
+    "box1 box2 box3 box4";
+}
+
+.social{
+    background-color: #6a6868;
+    width: 25px;
+    height:25px;
+    margin: 30px;
+
+
 }
 
 #box1{
     grid-area: box1;
-    text-align: center;
+
 }
 
 #box2{
     grid-area: box2;
-    text-align: center;
+
 }
 
 #box3{
     grid-area: box3;
-    text-align: center;
+
 }
 
 #box4{
     grid-area: box4;
-    text-align: center;
+
 }
 
 
@@ -130,14 +133,8 @@ footer {
     background-image: url("../img/Welcome.png");
     background-size: 45%;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position:  right;
 
-}
-
-.wel-container {
-    /*float: right;*/
-    display: flex;
-    justify-content: flex-end;
 }
 
 #wel-img {
@@ -177,22 +174,24 @@ footer {
     width: 55%;
     margin: 0;
 }
-.menu {
+
+.menu{
     text-align: center;
-    margin-left: 33px;
+    justify-content: center;
+    align-items: center;
 }
-.menu li {
+.project-btn {
     list-style: none;
     padding: 8px;
     margin-bottom: 7px;
     border: 5px solid #4663B9;
     color: #8d8989;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.60), 0 1px 2px rgba(0, 0, 0, 0.74);
-    font-size: 16px;
-    width: 300px;
+    font-size: 14px;
+    width: 95px;
 }
 
-.menu li:hover {
+.menu .project-btn:hover {
     background-color: #4663B9;
     color: white;
 }
@@ -268,6 +267,10 @@ footer {
     width: 700px;
     height: 250px;
 }
+/*#skills-img {*/
+/*    width: 320px;*/
+/*    height: 1000px;*/
+/*}*/
 
 #contact-img{
     width: 1050px;
@@ -293,6 +296,7 @@ footer {
 
         margin: 0;!important;
     }
+
 }
 
 
@@ -335,6 +339,24 @@ footer {
     }
 
 
+    .social{
+        background-color: #6a6868;
+        width: 50px;
+        height:50px;
+        margin: 30px;
+        text-align: center
+
+    }
+    footer {
+
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: max-content;
+        grid-template-areas:
+   ".. .. .. ..  box1 box2 box3 box4 .. .. .. ..";
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -375,6 +397,10 @@ footer {
         width: 70%;
     }
 
+    #skills-img{
+        width: 50%;
+    }
+
 
 }
 
@@ -383,8 +409,8 @@ footer {
     #title {
 
         font-size: 29px;
-        left: 471px;
-        top: 190px;
+        left: 485px;
+        top: 250px;
     }
 
 
@@ -392,22 +418,28 @@ footer {
 
         font-family: "Roboto Light";
         font-size: 25px;
-        left: 665px;
-        top: 286px;
+        left: 714px;
+        top: 350px;
+    }
+    .header-right{
+        background-position: right 35% bottom 70%;
     }
     .menu {
 
         margin: 0;!important;
     }
 
-    #skills-img{
-        width: 900px;
-        height: 300px;
+    #content1{
+        text-align: center;
     }
+    #skills-img{
+        width: 50%;
+    }
+
 
     .project-gif{
 
-        width: 90%;
+        width: 80%;
     }
 
 
