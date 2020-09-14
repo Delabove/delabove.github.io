@@ -131,16 +131,13 @@ footer {
     background-color: #313030;
     height: 180px;
     background-image: url("../img/Welcome.png");
-    background-size: 45%;
+    background-size: 46%;
     background-repeat: no-repeat;
-    background-position:  right;
+    background-position:  right 19% bottom 69%;
 
 }
 
-#wel-img {
-    width: 110px;
-    height: 110px;
-}
+
 
 #title {
 
@@ -176,7 +173,7 @@ footer {
 }
 
 .menu{
-    text-align: center;
+
     justify-content: center;
     align-items: center;
 }
@@ -261,16 +258,9 @@ footer {
 }
 
 
-/*}*/
-
 #skills-img {
-    width: 700px;
-    height: 250px;
+    width: 87%;
 }
-/*#skills-img {*/
-/*    width: 320px;*/
-/*    height: 1000px;*/
-/*}*/
 
 #contact-img{
     width: 1050px;
@@ -307,8 +297,15 @@ footer {
         height: 350px;
     }
 
+
     .header-right {
+        background-color: #313030;
         height: 350px;
+        background-image: url("../img/Welcome.png");
+        background-size: 20%;
+        background-repeat: repeat;
+        background-position:  right 27% bottom 74%;
+
     }
 
 
@@ -335,7 +332,10 @@ footer {
 
     .project-gif{
 
-        width: 30%;
+        width: 36%;
+    }
+    #skills-img{
+        width: 38%;
     }
 
 
@@ -344,7 +344,7 @@ footer {
         width: 50px;
         height:50px;
         margin: 30px;
-        text-align: center
+        text-align: center;
 
     }
     footer {
@@ -354,7 +354,7 @@ footer {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-auto-rows: max-content;
         grid-template-areas:
-   ".. .. .. ..  box1 box2 box3 box4 .. .. .. ..";
+        ".. .. .. ..  box1 box2 box3 box4 .. .. .. ..";
     }
 
 }
@@ -367,8 +367,12 @@ footer {
     }
 
     .header-right {
+        background-color: #313030;
         height: 540px;
-        background-position: right 5% bottom 60%;
+        background-image: url("../img/Welcome.png");
+        background-size: 28%;
+        background-repeat: repeat;
+        background-position:  right 27% bottom 74%;
 
     }
 
@@ -394,7 +398,7 @@ footer {
 
     .project-gif{
 
-        width: 70%;
+        width: 48%;
     }
 
     #skills-img{
@@ -422,18 +426,17 @@ footer {
         top: 350px;
     }
     .header-right{
-        background-position: right 35% bottom 70%;
+        background-size: 38%;
+        background-repeat: no-repeat;
+        background-position: right 46% bottom 70%;
     }
     .menu {
 
         margin: 0;!important;
     }
 
-    #content1{
-        text-align: center;
-    }
     #skills-img{
-        width: 50%;
+        width: 80%;
     }
 
 
