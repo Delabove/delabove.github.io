@@ -76,9 +76,37 @@ main {
 
 
 footer {
-    /*background-color: #0b3c45;*/
+
     grid-area: footer;
+    display: grid;
+    /*height: 100vh;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: max-content;
+    grid-template-areas:
+   ".. .. .. ..  box1 box2 box3 box4 .. .. .. ..";
+    /*grid-gap: 3rem;*/
 }
+
+#box1{
+    grid-area: box1;
+    text-align: center;
+}
+
+#box2{
+    grid-area: box2;
+    text-align: center;
+}
+
+#box3{
+    grid-area: box3;
+    text-align: center;
+}
+
+#box4{
+    grid-area: box4;
+    text-align: center;
+}
+
 
 
 .header-block {
