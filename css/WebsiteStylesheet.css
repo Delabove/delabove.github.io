@@ -64,7 +64,10 @@ main {
 
 }
 
-
+#content2{
+    grid-area: content2;
+    text-align: center;
+}
 
 
 .ml12 {
@@ -73,11 +76,14 @@ main {
     font-size: 1.8em;
     text-transform: uppercase;
     letter-spacing: 0.5em;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#content2 .ml12 .letter {
-    display: inline-grid;
-    grid-area: content2;
+.ml12 .letter {
+
     line-height: 1em;
 }
 
