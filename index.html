@@ -69,30 +69,10 @@
     </div>
 
     <div id="sidebar">
-            <div class="column1 menu">
-                <div>
+            <div class="project-content">
                     <div class="project-btn" href="#" id="texas-fresh">React</div>
-                    <div class=" project-tab" id="bar1">
-                        <div class="project-container">
-                            <div id="texasFresh" style="display:none; margin-bottom: 40px;">
-                                <h3>Texas Fresh Blog Landing Page</h3>
-                                <div><img class="project-gif"  src="Project-GIFS/ReactLanding.gif"/></div>
-                                <p class="project-description">Project Description</p>
-                                <br>
-                                <a href="https://delabove.github.io/React-Blog-Layout/"> Welcome to
-                                    Texas Fresh </a>
-                            </div>
-                        </div>
-                        <div class="project-container">
-                            <div id="reactCalc" style="display:none; margin-top: 40px; margin-bottom: 40px;">
-                                <h3>Intro to Reach</h3>
-                                <div><img class="project-gif"  src="Project-GIFS/reactPatterns.gif"/></div>
-                                <p class="project-description">Project Description</p>
-                                <br>
-                                <a href="https://github.com/Delabove/Calculator"> View source code </a>
-                            </div>
-                        </div>
-                    </div>
+                    <div class=" project-tab" id="bar1"></div>
+
                     <div class="project-btn" href="#" id="social-code">Full Stack</div>
                     <div class="col-9 project-tab" id="bar2">
                         <div class="project-container">
@@ -160,6 +140,28 @@
                     </div>
                 </div>
         </div>
+
+    <div id="projects">
+        <div class="project-container">
+            <div id="texasFresh" style="display:none; margin-bottom: 40px;">
+                <h3>Texas Fresh Blog Landing Page</h3>
+                <div><img class="project-gif"  src="Project-GIFS/ReactLanding.gif"/></div>
+                <p class="project-description">Project Description</p>
+                <br>
+                <a href="https://delabove.github.io/React-Blog-Layout/"> Welcome to
+                    Texas Fresh </a>
+            </div>
+
+
+            <div id="reactCalc" style="display:none; margin-top: 40px; margin-bottom: 40px;">
+                <h3>Intro to Reach</h3>
+                <div><img class="project-gif"  src="Project-GIFS/reactPatterns.gif"/></div>
+                <p class="project-description">Project Description</p>
+                <br>
+                <a href="https://github.com/Delabove/Calculator"> View source code </a>
+            </div>
+        </div>
+    </div>
 
     </div>
     <div id="content1">
@@ -235,7 +237,7 @@
         var textWrapper = document.querySelector('.ml12');
         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-        anime.timeline({loop: true})
+            anime.timeline({loop: true})
             .add({
                 targets: '.ml12 .letter',
                 translateX: [40,0],
@@ -257,6 +259,7 @@
             function () {
                 $("#texas-fresh").click(function () {
                     $("#texasFresh").toggle();
+                    $("#reactCalc").toggle();
 
                 });
 
@@ -275,10 +278,6 @@
                 $("#weather-map").click(function () {
                     $("#weatherMap").toggle();
                 });
-                $("#calc").click(function () {
-                    $("#reactCalc").toggle();
-                });
-
             });
     });
 

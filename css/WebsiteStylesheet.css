@@ -34,10 +34,11 @@ body {
     "main main main main"
     "content2 content2 content2 content2"
     "sidebar sidebar sidebar sidebar"
+    "projects projects projects projects"
     "content1 content1 content1 content1"
-
     "footer footer footer footer";
     grid-gap: 3rem;
+    /*align-content: center;*/
 
 }
 
@@ -61,14 +62,18 @@ main {
 #content1 {
 
     grid-area: content1;
+    text-align: center;
 
 }
 
-#content2{
+#content2 {
     grid-area: content2;
     text-align: center;
 }
 
+#projects {
+    grid-area: projects;
+}
 
 .ml12 {
     font-family: "Roboto Light";
@@ -97,35 +102,34 @@ footer {
     "box1 box2 box3 box4";
 }
 
-.social{
+.social {
     background-color: #6a6868;
     width: 25px;
-    height:25px;
+    height: 25px;
     margin: 30px;
 
 
 }
 
-#box1{
+#box1 {
     grid-area: box1;
 
 }
 
-#box2{
+#box2 {
     grid-area: box2;
 
 }
 
-#box3{
+#box3 {
     grid-area: box3;
 
 }
 
-#box4{
+#box4 {
     grid-area: box4;
 
 }
-
 
 
 .header-block {
@@ -149,10 +153,9 @@ footer {
     background-image: url("../img/Welcome.png");
     background-size: 46%;
     background-repeat: no-repeat;
-    background-position:  right 19% bottom 69%;
+    background-position: right 19% bottom 69%;
 
 }
-
 
 
 #title {
@@ -176,24 +179,33 @@ footer {
     top: 100px;
 }
 
+.project-content, .btn-container {
 
-.project-tab a {
+    grid-area: content1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    transform: translate(3%, -50%);
+
+}
+
+
+project-tab a {
+    grid-area: content1;
     text-align: center;
     font-family: "Open Sans";
     color: #5e5c5c;
 }
-.project-gif{
+
+.project-gif {
     width: 55%;
     margin: 0;
 }
 
-.menu{
 
-    justify-content: center;
-    align-items: center;
-}
 .project-btn {
+    flex-wrap: wrap;
     list-style: none;
     padding: 8px;
     margin-bottom: 7px;
@@ -201,14 +213,20 @@ footer {
     color: #8d8989;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.60), 0 1px 2px rgba(0, 0, 0, 0.74);
     font-size: 14px;
-    width: 95px;
+    /*width: 95px;*/
 }
 
-.menu .project-btn:hover {
+.project-btn:hover {
     background-color: #4663B9;
     color: white;
 }
 
+.project-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
 
 /* The side navigation menu */
 .sidenav {
@@ -278,11 +296,10 @@ footer {
     width: 87%;
 }
 
-#contact-img{
+#contact-img {
     width: 1050px;
     height: 480px;
 }
-
 
 
 /*/////////////////////////////////// !*RESPONSIVE Grid*! /////////////////////////*/
@@ -300,9 +317,11 @@ footer {
         "content2"
         "footer";
     }
+
     .menu {
 
-        margin: 0;!important;
+        margin: 0;
+    !important;
     }
 
 }
@@ -322,7 +341,7 @@ footer {
         background-image: url("../img/Welcome.png");
         background-size: 20%;
         background-repeat: repeat;
-        background-position:  right 27% bottom 74%;
+        background-position: right 27% bottom 74%;
 
     }
 
@@ -352,26 +371,29 @@ footer {
 
     .menu {
 
-        margin: 0;!important;
+        margin: 0;
+    !important;
     }
 
-    .project-gif{
+    .project-gif {
 
         width: 36%;
     }
-    #skills-img{
+
+    #skills-img {
         width: 38%;
     }
 
 
-    .social{
+    .social {
         background-color: #6a6868;
         width: 50px;
-        height:50px;
+        height: 50px;
         margin: 30px;
         text-align: center;
 
     }
+
     footer {
 
         grid-area: footer;
@@ -397,7 +419,7 @@ footer {
         background-image: url("../img/Welcome.png");
         background-size: 28%;
         background-repeat: repeat;
-        background-position:  right 27% bottom 74%;
+        background-position: right 27% bottom 74%;
 
     }
 
@@ -416,17 +438,19 @@ footer {
         left: 560px;
         top: 300px;
     }
+
     .menu {
 
-        margin: 0;!important;
+        margin: 0;
+    !important;
     }
 
-    .project-gif{
+    .project-gif {
 
         width: 48%;
     }
 
-    #skills-img{
+    #skills-img {
         width: 50%;
     }
 
@@ -456,23 +480,26 @@ footer {
         left: 714px;
         top: 350px;
     }
-    .header-right{
+
+    .header-right {
         background-size: 38%;
         background-repeat: no-repeat;
-        background-position: right 46% bottom 70%;
+        background-position: right 33% bottom 70%;
     }
+
     .menu {
 
-        margin: 0;!important;
+        margin: 0;
+    !important;
     }
 
-    #skills-img{
+    #skills-img {
         width: 67%;
         /*do not change deployed site looks different*/
     }
 
 
-    .project-gif{
+    .project-gif {
 
         width: 60%;
         /*do not change deployed site looks different*/
