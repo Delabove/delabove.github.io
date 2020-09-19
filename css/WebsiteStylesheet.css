@@ -459,6 +459,11 @@ footer {
         height: 540px;
     }
 
+
+    #content1 {
+        height: 550px;
+    }
+
     .header-right {
         background-color: #313030;
         height: 540px;
@@ -529,7 +534,7 @@ footer {
     .header-right {
         background-size: 48%;
         background-repeat: no-repeat;
-        background-position: right 5% bottom 70%;
+        background-position: right 25% bottom 70%;
     }
 
     .menu {
@@ -558,6 +563,11 @@ footer {
 }
 
 
+@media screen and (min-width: 2100px) {
 
-
-
+    .header-right {
+        background-size: 34%;
+        background-repeat: no-repeat;
+        background-position: right 61% bottom 70%;
+    }
+}
