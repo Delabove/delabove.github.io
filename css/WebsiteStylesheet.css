@@ -463,9 +463,9 @@ footer {
         background-color: #313030;
         height: 540px;
         background-image: url("../img/Welcome.png");
-        background-size: 28%;
-        background-repeat: repeat;
-        background-position: right 27% bottom 74%;
+        background-size: 45%;
+        background-repeat: no-repeat;
+        background-position: right 1% bottom 60%;
 
     }
 
@@ -497,14 +497,13 @@ footer {
     }
 
     #skills-img {
-        width: 50%;
+        width: 80%;
     }
 
 
     .ml12 {
 
-        font-size: .9em;
-        transform: translate(-75%, -50%);
+        font-size: 1.0em;
     }
 
 }
@@ -528,9 +527,9 @@ footer {
     }
 
     .header-right {
-        background-size: 38%;
+        background-size: 48%;
         background-repeat: no-repeat;
-        background-position: right 33% bottom 70%;
+        background-position: right 5% bottom 70%;
     }
 
     .menu {
@@ -540,7 +539,7 @@ footer {
     }
 
     #skills-img {
-        width: 67%;
+        width: 60%;
         /*do not change deployed site looks different*/
     }
 
@@ -554,8 +553,7 @@ footer {
 
     .ml12 {
 
-        font-size: 1.2em;
-        transform: translate(-50%, -50%);
+        font-size: 1.3em;
     }
 }
 
